@@ -192,11 +192,11 @@ O verde aplicado no ambiente não atendeu à expectativa. A direção é uma cor
 - [ ] Nova paleta em tons neutros definida
 - [ ] Parede com cor mais neutra/masculina.
 
-### STE-02. Guarda-roupa com quatro portas e mais cabideiros
+### STE-02. Guarda-roupa com quatro portas
 
 `change` · págs. 11 a 18
 
-O guarda-roupa passa a ter **quatro portas**, com aumento da quantidade de cabideiros na configuração interna.
+O guarda-roupa passa a ter **quatro portas**, com ampliação da quantidade de cabideiros em sua configuração interna. A nova porta poderá corresponder a um módulo de cabideiros no canto esquerdo, facilitando o acesso às roupas em razão da proximidade com a penteadeira. As demais portas deverão ser deslocadas para a direita(`p + 1`).
 
 **Critério de aceite**
 
@@ -208,7 +208,7 @@ O guarda-roupa passa a ter **quatro portas**, com aumento da quantidade de cabid
 
 `change` · págs. 11 a 18 · acoplado a `STE-05`
 
-A penteadeira sai da posição projetada e assume o lugar hoje destinado aos cabideiros.
+A penteadeira sai da posição projetada e assume o lugar hoje destinado aos ganchos.
 
 **Critério de aceite**
 
