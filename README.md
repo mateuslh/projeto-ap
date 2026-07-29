@@ -28,17 +28,6 @@ Itens do tipo `spike` não têm solução predefinida: o retorno esperado é um 
 
 > Referência no baseline: **págs. 3 a 8**, sendo a planta de layout na pág. 4 e as perspectivas nas págs. 5 a 8.
 
-| ID | Item | Tipo | Depende de |
-|---|---|---|---|
-| [`ESC-01`](#esc-01-reposicionamento-da-bancada-principal) | Reposicionamento da bancada principal | `change` | |
-| [`ESC-02`](#esc-02-ampliação-do-armazenamento-fechado) | Ampliação do armazenamento fechado | `feat` | |
-| [`ESC-03`](#esc-03-estudo-da-prateleira-ocupando-a-parede-esquerda-inteira) | Estudo da prateleira ocupando a parede esquerda inteira | `spike` | `ESC-01` |
-| [`ESC-04`](#esc-04-bancada-dimensionada-para-três-monitores) | Bancada dimensionada para três monitores | `change` | `ESC-01` |
-| [`ESC-05`](#esc-05-profundidade-de-bancada-ampliada) | Profundidade de bancada ampliada | `change` | `ESC-01` |
-| [`ESC-06`](#esc-06-iluminação-de-apoio-para-reuniões-por-vídeo) | Iluminação de apoio para reuniões por vídeo | `feat` | `ESC-01` |
-| [`ESC-07`](#esc-07-previsão-de-fixação-para-braços-articulados-de-monitor) | Previsão de fixação para braços articulados de monitor | `feat` | `ESC-01`, `ESC-04` |
-| [`ESC-08`](#esc-08-ampliação-da-iluminação-indireta) | Ampliação da iluminação indireta | `feat` | `ESC-01`, `ESC-03` |
-
 ### ESC-01. Reposicionamento da bancada principal
 
 `change` · pág. 4, págs. 5 a 8
