@@ -96,7 +96,8 @@ A disposição dos equipamentos não deve comprometer a área útil de trabalho,
 * [ ] Espaço suficiente para conexão e manuseio dos cabos sem dobras excessivas;
 * [ ] Organização dos cabos sem interferência na área útil da bancada.
 
-**imagens de referencia**
+**Imagens de referência**
+
 ![img_4.png](img_4.png)
 ![img_5.png](img_5.png)
 ![img_6.png](img_6.png)
@@ -138,7 +139,7 @@ Os monitores serão instalados em braços articulados, o que impõe dois requisi
 - [ ] Ponto de fixação indicado no detalhamento do tampo
 - [ ] Folga posterior dimensionada e mantida livre de obstrução
 
-**Imagens de referencia**
+**Imagens de referência**
 
 ![img_2.png](img_2.png)
 ![img_1.png](img_1.png)
@@ -157,7 +158,8 @@ O escritório deve receber mais iluminação indireta e distribuída do que a ap
 - [ ] Fitas de LED previstas em mais de um elemento da marcenaria, quando tecnicamente viável
 - [ ] Luminárias de apoio e demais pontos de luz especificados e posicionados em planta
 
-**Imagens de referencia**
+**Imagens de referência**
+
 ![img_3.png](img_3.png)
 
 ---
