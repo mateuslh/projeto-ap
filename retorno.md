@@ -1,0 +1,368 @@
+# Solicitação de alterações R1
+
+## Índice
+
+1. [Escritório](#1-escritório), 8 itens
+2. [Suíte](#2-suíte), 10 itens
+3. [Banho suíte](#3-banho-suíte), 4 itens
+4. [Banho social](#4-banho-social), 1 item
+
+<details>
+<summary><strong>Convenções e como ler este documento</strong></summary>
+
+| Tipo | Significado |
+|---|---|
+| `change` | alteração de algo já projetado |
+| `feat` | item novo, sem correspondente no baseline |
+| `spike` | exige estudo antes de virar decisão |
+
+Cada módulo abre com um quadro de itens e segue com o detalhamento individual. Todo item declara o **tipo**, a **referência de página** no baseline, as **dependências** em relação aos demais itens e o **critério de aceite**, este último em formato de checklist para acompanhamento durante o detalhamento.
+
+Itens do tipo `spike` não têm solução predefinida: o retorno esperado é um parecer com recomendação, que pode ser contrária à hipótese levantada.
+
+</details>
+
+---
+
+## 1. Escritório
+
+> Referência no baseline: **págs. 3 a 8**, sendo a planta de layout na pág. 4 e as perspectivas nas págs. 5 a 8.
+
+| ID | Item | Tipo | Depende de |
+|---|---|---|---|
+| [`ESC-01`](#esc-01-reposicionamento-da-bancada-principal) | Reposicionamento da bancada principal | `change` | |
+| [`ESC-02`](#esc-02-ampliação-do-armazenamento-fechado) | Ampliação do armazenamento fechado | `feat` | |
+| [`ESC-03`](#esc-03-estudo-da-prateleira-ocupando-a-parede-esquerda-inteira) | Estudo da prateleira ocupando a parede esquerda inteira | `spike` | `ESC-01` |
+| [`ESC-04`](#esc-04-bancada-dimensionada-para-três-monitores) | Bancada dimensionada para três monitores | `change` | `ESC-01` |
+| [`ESC-05`](#esc-05-profundidade-de-bancada-ampliada) | Profundidade de bancada ampliada | `change` | `ESC-01` |
+| [`ESC-06`](#esc-06-iluminação-de-apoio-para-reuniões-por-vídeo) | Iluminação de apoio para reuniões por vídeo | `feat` | `ESC-01` |
+| [`ESC-07`](#esc-07-previsão-de-fixação-para-braços-articulados-de-monitor) | Previsão de fixação para braços articulados de monitor | `feat` | `ESC-01`, `ESC-04` |
+| [`ESC-08`](#esc-08-ampliação-da-iluminação-indireta) | Ampliação da iluminação indireta | `feat` | `ESC-01`, `ESC-03` |
+
+### ESC-01. Reposicionamento da bancada principal
+
+`change` · pág. 4, págs. 5 a 8
+
+A bancada principal passa para a parede à esquerda de quem entra no ambiente, e o armário passa para a parede à direita da porta.
+
+> **Nota.** Alteração estruturante do módulo. Os itens `ESC-03` a `ESC-07` partem desta nova disposição e devem ser lidos a partir dela.
+
+**Critério de aceite**
+
+- [ ] Planta de layout revisada com a bancada na parede esquerda e o armário na parede direita
+- [ ] Circulação e acesso à janela preservados na nova disposição
+
+### ESC-02. Ampliação do armazenamento fechado
+
+`feat` · págs. 4 a 8
+
+A capacidade de guarda projetada não atende ao uso previsto do ambiente. Como caminho possível, sugerimos um aparador com gavetas sob a janela, sem que isso constitua requisito fechado. A solução final fica a seu critério, desde que amplie o armazenamento fechado.
+
+**Critério de aceite**
+
+- [ ] Volume de guarda superior ao do baseline
+- [ ] Peça integrada à linguagem da marcenaria existente
+
+### ESC-03. Estudo da prateleira ocupando a parede esquerda inteira
+
+`spike` · págs. 5 a 8 · depende de `ESC-01`
+
+As prateleiras apresentadas foram aprovadas em linguagem e acabamento. Com a nova disposição, pedimos a avaliação de estender essa peça por toda a parede esquerda, seja como prateleiras, seja como nicho, conforme o partido de marcenaria que você julgar mais adequado.
+
+> **Escopo do estudo.** Interessa saber se a solução se sustenta construtivamente e se o resultado visual permanece equilibrado nessa proporção.
+
+**Critério de aceite**
+
+- [ ] Estudo com a peça correndo de ponta a ponta na parede esquerda
+- [ ] Recomendação explícita a favor ou contra a extensão
+
+### ESC-04. Bancada dimensionada para dois monitores e dois notebooks em posição vertical
+
+`change` · págs. 5 a 8 · depende de `ESC-01`
+
+O posto de trabalho deve possuir espaço útil suficiente para acomodar, simultaneamente:
+
+* dois monitores de até 27 polegadas, incluindo suas respectivas bases ou suportes;
+* dois notebooks posicionados verticalmente em docks ou suportes apropriados;
+* passagem e organização dos cabos de energia, vídeo, dados e demais periféricos.
+
+A disposição dos equipamentos não deve comprometer a área útil de trabalho, a estabilidade dos dispositivos nem o acesso às conexões dos notebooks e monitores. A imagem apresentada deve ser utilizada como referência para o posicionamento vertical dos notebooks.
+
+**Critérios de aceite**
+
+* [ ] Largura e profundidade úteis da bancada compatíveis com dois monitores de até 27 polegadas;
+* [ ] Espaço lateral ou traseiro reservado para dois notebooks em posição vertical;
+* [ ] Docks ou suportes verticais adequados às dimensões e ao peso dos notebooks (estudo se existe alguma forma de integrar esses notebooks a alguma parte da marcenaria);
+* [ ] Espaço suficiente para conexão e manuseio dos cabos sem dobras excessivas;
+* [ ] Organização dos cabos sem interferência na área útil da bancada.
+
+**imagens de referencia**
+![img_4.png](img_4.png)
+![img_5.png](img_5.png)
+![img_6.png](img_6.png)
+![img_7.png](img_7.png)
+
+### ESC-05. Profundidade de bancada ampliada
+
+`change` · págs. 5 a 8 · depende de `ESC-01`
+
+A profundidade deve ser folgada em relação ao padrão adotado, de modo a permitir distância confortável de tela e área livre de trabalho à frente do teclado.
+
+**Critério de aceite**
+
+- [ ] Profundidade especificada acima da do baseline
+- [ ] Circulação resultante validada em planta
+
+### ESC-06. Iluminação de apoio para reuniões por vídeo
+
+`feat` · págs. 5 a 8 · depende de `ESC-01`
+
+Com a bancada na nova posição, a incidência de luz produz sombra acentuada no lado esquerdo do rosto durante chamadas de vídeo. É necessária uma fonte de luz que corrija esse desequilíbrio, ficando o tipo de luminária e o ponto de instalação a seu critério.
+
+**Critério de aceite**
+
+- [ ] Iluminação frontal difusa sobre o posto de trabalho.
+- [ ] Ausência de sombra predominante em um dos lados do rosto
+
+### ESC-07. Previsão de fixação para braços articulados de monitor
+
+`feat` · págs. 5 a 8 · depende de `ESC-01`, `ESC-04`
+
+Os monitores serão instalados em braços articulados, o que impõe dois requisitos ao tampo:
+
+1. **Ponto de fixação.** Tampo e borda dimensionados para receber a garra de fixação ou, alternativamente, furação passante prevista em projeto.
+2. **Folga posterior.** Distância entre a borda posterior do tampo e a parede suficiente para que a parte traseira do braço gire em torno do próprio eixo sem colidir.
+
+**Critério de aceite**
+
+- [ ] Ponto de fixação indicado no detalhamento do tampo
+- [ ] Folga posterior dimensionada e mantida livre de obstrução
+
+**Imagens de referencia**
+
+![img_2.png](img_2.png)
+![img_1.png](img_1.png)
+![img.png](img.png)
+
+### ESC-08. Ampliação da iluminação indireta
+
+`feat` · págs. 5 a 8 · depende de `ESC-01`, `ESC-03`
+
+O escritório deve receber mais iluminação indireta e distribuída do que a apresentada, criando diferentes possibilidades de uso e uma atmosfera mais acolhedora. Solicitamos a inclusão de **várias fitas de LED, luminárias e pontos de luz**, integrados à marcenaria e ao ambiente, evitando que a iluminação fique concentrada em uma única fonte.
+
+> **Nota.** Este item trata da iluminação geral e cênica do escritório e complementa a luz funcional para reuniões por vídeo solicitada em `ESC-06`.
+
+**Critério de aceite**
+
+- [ ] Fitas de LED previstas em mais de um elemento da marcenaria, quando tecnicamente viável
+- [ ] Luminárias de apoio e demais pontos de luz especificados e posicionados em planta
+
+**Imagens de referencia**
+![img_3.png](img_3.png)
+
+---
+
+## 2. Suíte
+
+> Referência no baseline: **págs. 9 a 18**, sendo a planta de layout na pág. 10 e as perspectivas nas págs. 11 a 18.
+
+| ID | Item | Tipo | Depende de |
+|---|---|---|---|
+| [`STE-01`](#ste-01-substituição-do-verde-por-tom-mais-sóbrio) | Substituição do verde por tom mais sóbrio | `change` | |
+| [`STE-02`](#ste-02-guarda-roupa-com-quatro-portas-e-mais-cabideiros) | Guarda-roupa com quatro portas e mais cabideiros | `change` | |
+| [`STE-03`](#ste-03-penteadeira-na-posição-atual-dos-cabideiros) | Penteadeira na posição atual dos cabideiros | `change` | |
+| [`STE-04`](#ste-04-led-no-espelho-da-penteadeira) | LED no espelho da penteadeira | `feat` | `STE-03` |
+| [`STE-05`](#ste-05-realocação-dos-cabideiros-para-a-parede-atrás-da-porta) | Realocação dos cabideiros para a parede atrás da porta | `spike` | `STE-03` |
+| [`STE-06`](#ste-06-divisórias-nas-gavetas-da-penteadeira) | Divisórias nas gavetas da penteadeira | `feat` | `STE-03` |
+| [`STE-07`](#ste-07-ampliação-da-iluminação-indireta) | Ampliação da iluminação indireta | `change` | |
+| [`STE-08`](#ste-08-portas-do-roupeiro-integralmente-espelhadas) | Portas do roupeiro integralmente espelhadas | `change` | `STE-02` |
+| [`STE-09`](#ste-09-definição-da-posição-do-sapateiro) | Definição da posição do sapateiro | `spike` | |
+| [`STE-10`](#ste-10-estudo-de-segunda-gaveta-com-divisórias-no-armário) | Estudo de segunda gaveta com divisórias no armário | `spike` | `STE-02` |
+
+### STE-01. Substituição do verde por tom mais sóbrio
+
+`change` · págs. 11 a 18
+
+O verde aplicado no ambiente não atendeu à expectativa. A direção é uma cor mais sóbria, com a paleta geral puxada para tons neutros.
+
+**Critério de aceite**
+
+- [ ] Nova paleta em tons neutros definida
+- [ ] Parede com cor mais neutra/masculina.
+
+### STE-02. Guarda-roupa com quatro portas e mais cabideiros
+
+`change` · págs. 11 a 18
+
+O guarda-roupa passa a ter **quatro portas**, com aumento da quantidade de cabideiros na configuração interna.
+
+**Critério de aceite**
+
+- [ ] Guarda-roupa com quatro portas
+- [ ] Vista interna com metragem linear de cabide superior à do baseline
+- [ ] Guarda-roupa ocupa a parede de forma integral
+
+### STE-03. Penteadeira na posição atual dos cabideiros
+
+`change` · págs. 11 a 18 · acoplado a `STE-05`
+
+A penteadeira sai da posição projetada e assume o lugar hoje destinado aos cabideiros.
+
+**Critério de aceite**
+
+- [ ] Planta e elevação revisadas com a penteadeira na nova posição
+
+### STE-04. LED no espelho da penteadeira
+
+`feat` · págs. 11 a 18 · depende de `STE-03`
+
+Iluminação em LED integrada ao espelho da penteadeira.
+
+**Critério de aceite**
+
+- [ ] Detalhamento do espelho com LED
+
+### STE-05. Realocação dos cabideiros para a parede atrás da porta
+
+`spike` · pág. 10, págs. 11 a 18 · acoplado a `STE-03`
+
+Com a penteadeira assumindo o lugar dos cabideiros, a hipótese é transferi-los para a parede atrás da porta. Pedimos que a possibilidade seja analisada antes de virar decisão.
+
+> **Restrições a verificar.** Abertura da porta, circulação resultante e leitura estética da parede. Caso alguma delas inviabilize a solução, desconsiderar.
+
+**Critério de aceite**
+
+- [ ] Parecer de viabilidade
+- [ ] Solução desenhada, se viável
+
+### STE-06. Divisórias nas gavetas da penteadeira
+
+`feat` · págs. 11 a 18 · depende de `STE-03`
+
+Gavetas da penteadeira compartimentadas internamente.
+
+**Critério de aceite**
+
+- [ ] Detalhamento interno das gavetas com divisórias
+
+### STE-07. Ampliação da iluminação indireta
+
+`change` · págs. 11 a 18
+
+Aumentar a quantidade de luz indireta no ambiente em relação ao que foi apresentado.
+
+**Critério de aceite**
+
+- [ ] Projeto revisado com mais pontos de iluminação indireta
+
+### STE-08. Portas do roupeiro integralmente espelhadas
+
+`change` · págs. 11 a 18 · relacionado a `STE-02`
+
+O roupeiro deve ter espelho em **todas** as portas, e não apenas em parte delas.
+
+**Critério de aceite**
+
+- [ ] Elevação do roupeiro com a totalidade das portas espelhadas
+- [ ] Compatibilização com o número de portas definido em `STE-02`
+
+### STE-09. Definição da posição do sapateiro
+
+`spike` · págs. 11 a 18
+
+O sapateiro está previsto dentro do armário. Avaliar se ele permanece nessa posição ou se migra para a lavanderia, o que exige verificação prévia do espaço disponível naquele ambiente.
+
+> **Impacto.** A decisão altera a configuração interna do armário e deve ser resolvida antes do detalhamento da marcenaria.
+
+**Critério de aceite**
+
+- [ ] Levantamento do espaço disponível na lavanderia
+- [ ] Parecer comparando as duas hipóteses, com recomendação de qual adotar
+
+### STE-10. Estudo de segunda gaveta com divisórias no armário
+
+`spike` · págs. 11 a 18 · relacionado a `STE-02`
+
+O armário já conta com **uma** gaveta com divisórias para acessórios. Avaliar a possibilidade de haver **duas**, sem prejuízo das demais funções internas do móvel.
+
+**Critério de aceite**
+
+- [ ] Detalhamento interno das duas gavetas, se viável
+
+---
+
+## 3. Banho suíte
+
+| ID | Item | Tipo | Depende de |
+|---|---|---|---|
+| [`BSU-01`](#bsu-01-suporte-para-toalhas-de-banho) | Suporte para toalhas de banho | `feat` | |
+| [`BSU-02`](#bsu-02-tomadas-internas-nas-gavetas) | Tomadas internas nas gavetas | `feat` | |
+| [`BSU-03`](#bsu-03-cuba-de-maior-dimensão) | Cuba de maior dimensão | `change` | |
+| [`BSU-04`](#bsu-04-estudo-de-extensão-do-armário-até-o-box) | Estudo de extensão do armário até o box | `spike` | |
+
+### BSU-01. Suporte para toalhas de banho
+
+`feat` · págs. 21 a 27
+
+Incluir suporte para toalhas de banho com capacidade para **no mínimo duas toalhas em uso simultâneo**, seja em barra única de comprimento suficiente, seja em ganchos independentes.
+
+**Critério de aceite**
+
+- [ ] Suporte posicionado em planta e elevação
+- [ ] Capacidade mínima de duas toalhas atendida
+- [ ] Acesso direto a partir do box
+
+### BSU-02. Tomadas internas nas gavetas
+
+`feat` · págs. 21 a 27
+
+Prever pontos de tomada dentro das gavetas do gabinete, permitindo uso e guarda de eletroportáteis sem cabo aparente sobre a bancada.
+
+**Critério de aceite**
+
+- [ ] Pontos elétricos internos indicados no detalhamento da marcenaria
+
+### BSU-03. Cuba de maior dimensão
+
+`change` · págs. 21 a 27
+
+Substituir a cuba especificada por modelo de dimensão maior.
+
+**Critério de aceite**
+
+- [ ] Nova especificação de cuba definida
+- [ ] Compatibilização com bancada e gabinete verificada
+
+### BSU-04. Estudo de extensão do armário até o box
+
+`spike` · págs. 21 a 27
+
+Hipótese a avaliar: prolongar o armário até o box, com ganho de armazenamento.
+
+> **Critério de descarte.** Não se trata de requisito. Caso o resultado fique visualmente pesado ou comprometa a circulação, a extensão deve ser descartada.
+
+**Critério de aceite**
+
+- [ ] Estudo com a extensão desenhada
+- [ ] Recomendação explícita a favor ou contra
+
+---
+
+## 4. Banho social
+
+> Referência no baseline: **págs. 28 a 34**, sendo a planta de layout na pág. 29.
+
+| ID | Item | Tipo | Depende de |
+|---|---|---|---|
+| [`BSO-01`](#bso-01-suporte-para-toalhas-de-banho) | Suporte para toalhas de banho | `feat` | |
+
+### BSO-01. Suporte para toalhas de banho
+
+`feat` · págs. 30 a 34
+
+Mesmo requisito de [`BSU-01`](#bsu-01-suporte-para-toalhas-de-banho) aplicado ao banho social, com capacidade para **no mínimo duas toalhas em uso simultâneo**.
+
+**Critério de aceite**
+
+- [ ] Suporte posicionado em planta e elevação
+- [ ] Capacidade mínima de duas toalhas atendida
