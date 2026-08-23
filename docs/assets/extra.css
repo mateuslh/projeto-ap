@@ -1,5 +1,6 @@
 /* Chips para os tipos de item (change / feat / spike) e IDs */
 .md-typeset table code,
+.md-typeset h2 + p > code:first-child,
 .md-typeset h3 + p > code:first-child {
   border-radius: 1rem;
   padding: 0.12em 0.6em;

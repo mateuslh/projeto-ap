@@ -11,7 +11,7 @@ de aceite em formato de checklist.
 | Documento | Escopo | Itens |
 |---|---|---:|
 | [R1](docs/r1.md) | Escritório, suíte, banho suíte, banho social | 23 |
-| [R2](docs/r2.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 11 |
+| [R2](docs/r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 11 |
 | [Como ler](docs/convencoes.md) | Tipos de item, dependências e callouts | — |
 
 ## Estrutura do repositório
@@ -20,8 +20,14 @@ de aceite em formato de checklist.
 docs/
   index.md            página inicial do site
   convencoes.md       tipos de item, dependências e callouts
-  r1.md               revisão R1
-  r2.md               revisão R2
+  r1.md               revisão R1, página única
+  r2/                 revisão R2, uma página por ambiente
+    index.md          visão geral, quadro dos 11 itens e composição por tipo
+    sala.md           1. Sala
+    cozinha.md        2. Cozinha
+    lavanderia.md     3. Lavanderia
+    hospede.md        4. Quarto de hóspede
+    geral.md          5. Todos os cômodos
   assets/             imagens de referência e CSS adicional
 mkdocs.yml            configuração do site
 requirements.txt      dependências do build, com versões fixadas
@@ -60,6 +66,9 @@ pipeline em vez de ir para o ar silenciosamente.
 
 - Cada item recebe um ID estável no formato `PREFIXO-NN`, com o prefixo derivado do ambiente
   (`ESC`, `STE`, `BSU`, `BSO`, `SAL`, `COZ`, `LAV`, `HOS`, `GER`). IDs não são reaproveitados.
+- O título de cada item carrega uma âncora explícita com o ID em minúsculas
+  (`## SAL-01. … { #sal-01 }`), de modo que os links permaneçam válidos mesmo que o texto do
+  título seja reescrito.
 - Todo item declara tipo (`change`, `feat` ou `spike`), dependências e critério de aceite.
 - Alterações no conteúdo entram por revisão: uma revisão publicada não é reescrita, e novas
   solicitações abrem a revisão seguinte.

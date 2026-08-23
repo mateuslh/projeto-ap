@@ -19,8 +19,9 @@ de aceite, de modo que o acompanhamento do detalhamento possa ser feito item a i
     ---
 
     11 itens em 5 módulos: sala, cozinha, lavanderia, quarto de hóspede e itens transversais.
+    Uma página por ambiente.
 
-    [:octicons-arrow-right-24: Abrir a revisão R2](r2.md)
+    [:octicons-arrow-right-24: Abrir a revisão R2](r2/index.md)
 
 -   :material-book-open-variant: **Como ler este documento**
 
@@ -37,7 +38,7 @@ de aceite, de modo que o acompanhamento do detalhamento possa ser feito item a i
 | Revisão | Escopo | Módulos | Itens | `change` | `feat` | `spike` |
 |---|---|---:|---:|---:|---:|---:|
 | [R1](r1.md) | Escritório, suíte, banho suíte, banho social | 4 | 23 | 9 | 9 | 5 |
-| [R2](r2.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 5 | 11 | 4 | 4 | 3 |
+| [R2](r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 5 | 11 | 4 | 4 | 3 |
 
 ## Baseline
 

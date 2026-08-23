@@ -20,6 +20,7 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.sections
+    - navigation.indexes
     - navigation.top
     - navigation.footer
     - toc.follow
@@ -47,7 +48,13 @@ nav:
   - Como ler: convencoes.md
   - Revisões:
       - R1 — Escritório, suíte e banhos: r1.md
-      - R2 — Sala, cozinha e serviço: r2.md
+      - R2 — Sala, cozinha e serviço:
+          - r2/index.md
+          - 1. Sala: r2/sala.md
+          - 2. Cozinha: r2/cozinha.md
+          - 3. Lavanderia: r2/lavanderia.md
+          - 4. Quarto de hóspede: r2/hospede.md
+          - 5. Todos os cômodos: r2/geral.md
 
 markdown_extensions:
   - admonition
