@@ -1,0 +1,26 @@
+/* Chips para os tipos de item (change / feat / spike) e IDs */
+.md-typeset table code,
+.md-typeset h3 + p > code:first-child {
+  border-radius: 1rem;
+  padding: 0.12em 0.6em;
+  font-size: 0.82em;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Tabelas de módulo ocupando a largura útil */
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+}
+
+/* Checklists mais legíveis em listas longas de critério de aceite */
+.md-typeset .task-list-item {
+  margin-bottom: 0.2rem;
+}
+
+/* Imagens de referência com moldura discreta */
+.md-typeset img {
+  border-radius: 0.25rem;
+  box-shadow: 0 0 0 1px var(--md-default-fg-color--lightest);
+}

@@ -1,0 +1,90 @@
+site_name: Apartamento M&I
+site_description: Solicitações de alteração ao projeto de interiores, por revisão e por ambiente.
+site_url: https://mateuslh.github.io/projeto-ap/
+site_author: Mateus Leal Hemkemeier
+
+repo_url: https://github.com/mateuslh/projeto-ap
+repo_name: mateuslh/projeto-ap
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site
+strict: true
+
+theme:
+  name: material
+  language: pt-BR
+  icon:
+    repo: fontawesome/brands/github
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - content.action.edit
+    - search.suggest
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Alternar para o modo escuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Alternar para o modo claro
+
+nav:
+  - Início: index.md
+  - Como ler: convencoes.md
+  - Revisões:
+      - R1 — Escritório, suíte e banhos: r1.md
+      - R2 — Sala, cozinha e serviço: r2.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+      # Preserva acentuação nas âncoras, mantendo compatibilidade com os links do GitHub
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+plugins:
+  - search:
+      lang: pt
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      draggable: true
+
+extra_css:
+  - assets/extra.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mateuslh/projeto-ap
+      name: Repositório no GitHub
+
+copyright: Documento de trabalho — uso restrito ao acompanhamento do projeto.
