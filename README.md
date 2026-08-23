@@ -29,6 +29,8 @@ docs/
     hospede.md        4. Quarto de hóspede
     geral.md          5. Todos os cômodos
   assets/             imagens de referência e CSS adicional
+includes/
+  abreviacoes.md      glossário anexado automaticamente a todas as páginas
 mkdocs.yml            configuração do site
 requirements.txt      dependências do build, com versões fixadas
 .github/workflows/    pipeline de publicação no GitHub Pages
@@ -69,6 +71,12 @@ pipeline em vez de ir para o ar silenciosamente.
 - O título de cada item carrega uma âncora explícita com o ID em minúsculas
   (`## SAL-01. … { #sal-01 }`), de modo que os links permaneçam válidos mesmo que o texto do
   título seja reescrito.
+- O tipo é escrito como chip colorido, via `attr_list`: `` `change`{ .t .t-change } ``. As três
+  variantes são `.t-change`, `.t-feat` e `.t-spike`, definidas em `docs/assets/extra.css`.
+- O critério de aceite fica em um admonition próprio, `!!! aceite "Critério de aceite"`, também
+  estilizado no `extra.css`.
+- Termos recorrentes do vocabulário de marcenaria entram em `includes/abreviacoes.md` e viram
+  tooltip em todas as páginas, sem precisar de repetição no texto.
 - Todo item declara tipo (`change`, `feat` ou `spike`), dependências e critério de aceite.
 - Alterações no conteúdo entram por revisão: uma revisão publicada não é reescrita, e novas
   solicitações abrem a revisão seguinte.

@@ -25,8 +25,11 @@ theme:
     - navigation.footer
     - toc.follow
     - content.action.edit
+    - content.tooltips
+    - content.code.copy
     - search.suggest
     - search.highlight
+    - search.share
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -57,8 +60,11 @@ nav:
           - 5. Todos os cômodos: r2/geral.md
 
 markdown_extensions:
+  - abbr
   - admonition
   - attr_list
+  - def_list
+  - footnotes
   - md_in_html
   - tables
   - toc:
@@ -68,13 +74,34 @@ markdown_extensions:
       slugify: !!python/object/apply:pymdownx.slugs.slugify
         kwds:
           case: lower
+  - pymdownx.blocks.caption
+  - pymdownx.caret
   - pymdownx.details
-  - pymdownx.superfences
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.tilde
+  - pymdownx.superfences:
+      custom_fences:
+        # Diagramas de dependência renderizados pelo Mermaid embarcado no tema
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  # Abreviações de uso comum, anexadas automaticamente a todas as páginas
+  - pymdownx.snippets:
+      base_path: [includes]
+      auto_append: [abreviacoes.md]
+      check_paths: true
 
 plugins:
   - search:

@@ -1,27 +1,221 @@
-/* Chips para os tipos de item (change / feat / spike) e IDs */
-.md-typeset table code,
-.md-typeset h2 + p > code:first-child,
-.md-typeset h3 + p > code:first-child {
+/* ==========================================================================
+   Apartamento M&I — folha de estilo complementar ao Material for MkDocs
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Paleta dos tipos de item
+   Cada tipo tem um par de cores próprio, redefinido no esquema escuro para
+   preservar contraste. Os pares são consumidos pelos chips da seção 2.
+   -------------------------------------------------------------------------- */
+
+:root {
+  --t-change-fg: #8a4b00;
+  --t-change-bg: rgba(255, 179, 0, 0.16);
+  --t-change-br: rgba(255, 179, 0, 0.45);
+
+  --t-feat-fg: #0f6d3c;
+  --t-feat-bg: rgba(0, 200, 83, 0.14);
+  --t-feat-br: rgba(0, 200, 83, 0.4);
+
+  --t-spike-fg: #4a34b8;
+  --t-spike-bg: rgba(124, 77, 255, 0.13);
+  --t-spike-br: rgba(124, 77, 255, 0.4);
+}
+
+[data-md-color-scheme="slate"] {
+  --t-change-fg: #ffc271;
+  --t-change-bg: rgba(255, 179, 0, 0.18);
+  --t-change-br: rgba(255, 179, 0, 0.35);
+
+  --t-feat-fg: #7fe0a6;
+  --t-feat-bg: rgba(0, 200, 83, 0.16);
+  --t-feat-br: rgba(0, 200, 83, 0.32);
+
+  --t-spike-fg: #c0aeff;
+  --t-spike-bg: rgba(124, 77, 255, 0.2);
+  --t-spike-br: rgba(124, 77, 255, 0.38);
+}
+
+/* --------------------------------------------------------------------------
+   2. Chips de tipo (change / feat / spike)
+   Aplicados via attr_list: `change`{ .t .t-change }
+   -------------------------------------------------------------------------- */
+
+.md-typeset code.t {
+  padding: 0.15em 0.7em 0.2em;
+  border: 1px solid transparent;
   border-radius: 1rem;
-  padding: 0.12em 0.6em;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  vertical-align: 0.05em;
+  white-space: nowrap;
+}
+
+.md-typeset code.t-change {
+  background-color: var(--t-change-bg);
+  border-color: var(--t-change-br);
+  color: var(--t-change-fg);
+}
+
+.md-typeset code.t-feat {
+  background-color: var(--t-feat-bg);
+  border-color: var(--t-feat-br);
+  color: var(--t-feat-fg);
+}
+
+.md-typeset code.t-spike {
+  background-color: var(--t-spike-bg);
+  border-color: var(--t-spike-br);
+  color: var(--t-spike-fg);
+}
+
+/* Linha de metadados logo abaixo do título do item */
+.md-typeset h2 + p:has(> code.t:first-child),
+.md-typeset h3 + p:has(> code.t:first-child) {
+  margin-top: -0.2rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.78rem;
+}
+
+/* IDs dos itens (`SAL-01`) dentro de links e tabelas.
+   O :not(.t) preserva os chips da seção anterior, que também caem nesses contextos
+   e seriam sobrescritos por esta regra, de especificidade maior. */
+.md-typeset table code:not(.t),
+.md-typeset a > code:not(.t) {
+  border-radius: 0.25rem;
+  padding: 0.1em 0.45em;
   font-size: 0.82em;
   font-weight: 600;
   letter-spacing: 0.02em;
 }
 
-/* Tabelas de módulo ocupando a largura útil */
+/* --------------------------------------------------------------------------
+   3. Admonition "aceite" — caixa dos critérios de aceite
+   -------------------------------------------------------------------------- */
+
+:root {
+  --md-admonition-icon--aceite: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 5h6v6H3zm2 2v2h2V7zm6 0h10v2H11zm0 8h10v2H11zm-6 5-3.5-3.5 1.41-1.41L5 17.17l4.59-4.58L11 14z"/></svg>');
+}
+
+.md-typeset .admonition.aceite,
+.md-typeset details.aceite {
+  border-color: rgb(43, 155, 70);
+}
+
+.md-typeset .aceite > .admonition-title,
+.md-typeset .aceite > summary {
+  background-color: rgba(43, 155, 70, 0.1);
+}
+
+.md-typeset .aceite > .admonition-title::before,
+.md-typeset .aceite > summary::before {
+  background-color: rgb(43, 155, 70);
+  -webkit-mask-image: var(--md-admonition-icon--aceite);
+          mask-image: var(--md-admonition-icon--aceite);
+}
+
+/* Checklists mais legíveis em listas longas de critério de aceite */
+.md-typeset .task-list-item {
+  margin-bottom: 0.25rem;
+}
+
+.md-typeset .aceite .task-list-control ~ * {
+  color: var(--md-default-fg-color--light);
+}
+
+/* --------------------------------------------------------------------------
+   4. Barra de contexto no topo das páginas de módulo
+   -------------------------------------------------------------------------- */
+
+.md-typeset .crumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.3rem 0.5rem;
+  margin: -0.3rem 0 1.4rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.4rem;
+  background-color: var(--md-code-bg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.7rem;
+  line-height: 1.6;
+}
+
+.md-typeset .crumb p {
+  margin: 0;
+}
+
+.md-typeset .crumb .twemoji {
+  height: 0.9rem;
+  width: 0.9rem;
+  vertical-align: -0.15rem;
+}
+
+/* --------------------------------------------------------------------------
+   5. Tabelas de itens
+   -------------------------------------------------------------------------- */
+
 .md-typeset table:not([class]) {
   display: table;
   width: 100%;
 }
 
-/* Checklists mais legíveis em listas longas de critério de aceite */
-.md-typeset .task-list-item {
-  margin-bottom: 0.2rem;
+.md-typeset table:not([class]) th {
+  background-color: var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
-/* Imagens de referência com moldura discreta */
+.md-typeset table:not([class]) tr:hover td {
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+/* --------------------------------------------------------------------------
+   6. Títulos e cards
+   -------------------------------------------------------------------------- */
+
+.md-typeset h2 {
+  margin-top: 2.2em;
+  padding-top: 0.6em;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h1 + .crumb + h2,
+.md-typeset h1 + h2 {
+  border-top: none;
+}
+
+.md-typeset .grid.cards > ul > li {
+  transition: border-color 125ms, box-shadow 125ms, transform 125ms;
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0.2rem 0.6rem rgba(0, 0, 0, 0.09);
+}
+
+/* --------------------------------------------------------------------------
+   7. Imagens de referência e diagramas
+   -------------------------------------------------------------------------- */
+
 .md-typeset img {
   border-radius: 0.25rem;
   box-shadow: 0 0 0 1px var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .crumb img,
+.md-typeset .twemoji img,
+.md-typeset .md-button img {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.md-typeset .mermaid {
+  margin: 1.2em 0;
+  text-align: center;
 }
