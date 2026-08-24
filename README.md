@@ -57,6 +57,21 @@ python3 -m venv .venv
 O site fica em <http://127.0.0.1:8000>, com recarga automática a cada alteração nos arquivos de
 `docs/`.
 
+## Acompanhamento interativo
+
+O indicador circular na barra superior abre o painel dos 35 itens. Nele é possível:
+
+- atribuir os estados **Pendente**, **Em análise**, **Aprovado** e **Concluído**;
+- buscar e filtrar solicitações por status ou tipo;
+- marcar os 97 critérios de aceite diretamente nas páginas;
+- exportar o acompanhamento em JSON e importá-lo em outro navegador;
+- instalar o site como aplicativo e consultar páginas já visitadas mesmo sem conexão.
+
+Os estados e checklists ficam no `localStorage` do navegador: não são enviados para terceiros nem
+alteram os arquivos Markdown. O índice do painel e o service worker são gerados automaticamente
+por `hooks/project_data.py` durante o build. Novos itens com IDs no formato `PREFIXO-NN` entram no
+painel sem cadastro manual.
+
 Para gerar o site estático em `site/`:
 
 ```bash

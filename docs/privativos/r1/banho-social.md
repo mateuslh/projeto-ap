@@ -21,4 +21,4 @@ Mesmo requisito de [`BSU-01`](banho-suite.md#bsu-01) aplicado ao banho social, c
 !!! aceite "Critério de aceite"
 
     - [ ] Suporte posicionado em planta e elevação
-- [ ] Capacidade mínima de duas toalhas atendida
+    - [ ] Capacidade mínima de duas toalhas atendida

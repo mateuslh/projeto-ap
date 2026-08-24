@@ -19,11 +19,15 @@ def _versioned_url(url, docs_dir):
 
 
 def on_config(config):
-    """Aplica cache busting ao CSS adicional e ao favicon do projeto."""
+    """Aplica cache busting ao CSS, JavaScript e favicon do projeto."""
 
     config.extra_css = [
         _versioned_url(path, config.docs_dir)
         for path in config.extra_css
+    ]
+    config.extra_javascript = [
+        _versioned_url(str(path), config.docs_dir)
+        for path in config.extra_javascript
     ]
 
     favicon = config.theme.get("favicon")
