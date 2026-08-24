@@ -12,31 +12,20 @@
 
 `change`{ .t .t-change title="Alteração de algo já projetado" }
 
-A escrivaninha e o mobiliário de apoio do quarto de hóspede devem ser reformulados para ==uso efetivo de estudo==, e não apenas como composição do ambiente. O ambiente precisa comportar longos períodos sentado, com postura adequada e material de estudo à mão.
+A escrivaninha e o mobiliário de apoio do quarto de hóspede devem ser reformulados para
+==uso efetivo de estudo==, e não apenas como composição do ambiente. O posto precisa comportar
+longos períodos sentado, com postura adequada e material de estudo à mão.
 
-**Requisitos do posto**
+São cinco requisitos, e eles valem em conjunto: atender a um deles às custas de outro não
+resolve o item.
 
-Altura e vão livre
-
-:   Altura de tampo e vão livre inferior compatíveis com uso prolongado, incluindo espaço para
-    as pernas sem obstrução por travessas ou gavetas.
-
-Profundidade útil
-
-:   Suficiente para notebook ou monitor à distância confortável de leitura, com área livre à
-    frente para caderno e material impresso.
-
-Iluminação
-
-:   Direcionada sobre o plano de trabalho, sem sombra sobre a área de escrita.
-
-Guarda de apoio
-
-:   Armazenamento para livros e material escolar, próximo ao posto.
-
-Pontos elétricos
-
-:   Ao alcance do tampo, conferidos contra o levantamento de [`GER-01`](geral.md#ger-01).
+| Requisito | O que se pede |
+|---|---|
+| **Altura e vão livre** | Altura de tampo e vão livre inferior compatíveis com uso prolongado, com espaço para as pernas sem obstrução por travessas ou gavetas. |
+| **Profundidade útil** | Suficiente para notebook ou monitor à distância confortável de leitura, com área livre à frente para caderno e material impresso. |
+| **Iluminação** | Luz de tarefa direcionada sobre o plano de trabalho, sem sombra sobre a área de escrita. |
+| **Guarda de apoio** | Armazenamento para livros e material escolar, próximo ao posto. |
+| **Pontos elétricos** | Ao alcance do tampo, conferidos contra o levantamento de [`GER-01`](geral.md#ger-01). |
 
 !!! aceite "Critério de aceite"
 

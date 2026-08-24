@@ -175,8 +175,43 @@
   background-color: var(--md-default-fg-color--lightest);
 }
 
+/* Coluna esquerda das tabelas de requisito: rótulo curto, sem quebrar */
+.md-typeset table:not([class]) td:first-child > strong:only-child {
+  white-space: nowrap;
+}
+
 /* --------------------------------------------------------------------------
-   6. Títulos e cards
+   6. Definition lists
+   O tema não distingue termo de definição; sem isto a lista vira texto corrido.
+   -------------------------------------------------------------------------- */
+
+.md-typeset dl {
+  margin: 1.2em 0;
+}
+
+.md-typeset dl dt {
+  margin-top: 1.1em;
+  font-weight: 700;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset dl dt:first-child {
+  margin-top: 0;
+}
+
+.md-typeset dl dd {
+  margin: 0.35em 0 0;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+}
+
+.md-typeset dl dd > p {
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   7. Títulos e cards
    -------------------------------------------------------------------------- */
 
 .md-typeset h2 {
@@ -200,7 +235,7 @@
 }
 
 /* --------------------------------------------------------------------------
-   7. Imagens de referência e diagramas
+   8. Imagens de referência e diagramas
    -------------------------------------------------------------------------- */
 
 .md-typeset img {
