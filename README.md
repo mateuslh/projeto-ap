@@ -11,7 +11,7 @@ de aceite em formato de checklist.
 | Documento | Escopo | Itens |
 |---|---|---:|
 | [R1](docs/r1.md) | Escritório, suíte, banho suíte, banho social | 23 |
-| [R2](docs/r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 11 |
+| [R2](docs/r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 12 |
 | [Como ler](docs/convencoes.md) | Tipos de item, dependências e callouts | — |
 
 ## Estrutura do repositório
@@ -22,7 +22,7 @@ docs/
   convencoes.md       tipos de item, dependências e callouts
   r1.md               revisão R1, página única
   r2/                 revisão R2, uma página por ambiente
-    index.md          visão geral, quadro dos 11 itens e composição por tipo
+    index.md          visão geral, quadro dos 12 itens e composição por tipo
     sala.md           1. Sala
     cozinha.md        2. Cozinha
     lavanderia.md     3. Lavanderia

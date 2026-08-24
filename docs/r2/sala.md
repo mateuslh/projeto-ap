@@ -8,7 +8,7 @@
 |---|---|---|---|
 | [`SAL-01`](#sal-01) | Gabinete sob a pia estendido até o piso | `change`{ .t .t-change } | — |
 | [`SAL-02`](#sal-02) | Gaveta oculta no aparador da entrada | `feat`{ .t .t-feat } | — |
-| [`SAL-03`](#sal-03) | Estudo de cristaleira | `spike`{ .t .t-spike } | — |
+| [`SAL-03`](#sal-03) | Estudo de cristaleira | `spike`{ .t .t-spike } | relacionado a [`COZ-04`](cozinha.md#coz-04) |
 
 ## SAL-01. Gabinete sob a pia estendido até o piso { #sal-01 }
 
@@ -44,16 +44,23 @@ A gaveta não precisa ocupar toda a extensão do aparador: o volume guardado é 
 
 ## SAL-03. Estudo de cristaleira { #sal-03 }
 
-`spike`{ .t .t-spike title="Exige estudo antes de virar decisão" }
+`spike`{ .t .t-spike title="Exige estudo antes de virar decisão" } · relacionado a [`COZ-04`](cozinha.md#coz-04)
 
 Hipótese a avaliar: incluir uma cristaleira na sala, com exposição de peças de vidro e louça.
 
 !!! abstract "Escopo do estudo"
 
-    Interessa saber onde a peça caberia sem prejuízo da circulação e do layout aprovado, e se a exposição se sustenta esteticamente diante do restante do ambiente. Não é requisito fechado: caso o resultado sobrecarregue visualmente o ambiente, a hipótese deve ser descartada.
+    Interessa saber onde a peça caberia sem prejuízo da circulação e do layout aprovado, e se a exposição se sustenta esteticamente diante do restante do ambiente. Caso o resultado sobrecarregue visualmente o ambiente, a hipótese pode ser descartada em favor da posição estudada em [`COZ-04`](cozinha.md#coz-04).
+
+!!! warning "Decisão conjunta com COZ-04"
+
+    Este item e [`COZ-04`](cozinha.md#coz-04) são as duas hipóteses para a mesma peça. Podem ser
+    descartados individualmente, mas ==não os dois ao mesmo tempo==: o apartamento deve ficar
+    com cristaleira na sala **ou** na cozinha. As imagens de referência da peça estão
+    reunidas em [`COZ-04`](cozinha.md#coz-04).
 
 !!! aceite "Critério de aceite"
 
     - [ ] Estudo com a cristaleira posicionada em planta e elevação
     - [ ] Verificação de circulação e de interferência com o layout aprovado
-    - [ ] Recomendação explícita a favor ou contra a inclusão
+    - [ ] Recomendação explícita a favor ou contra a inclusão, considerada a decisão conjunta com [`COZ-04`](cozinha.md#coz-04)

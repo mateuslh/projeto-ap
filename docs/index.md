@@ -1,7 +1,7 @@
 # Solicitações de alteração
 
 <div class="crumb" markdown>
-:material-home-variant-outline: **Apartamento M&I** &nbsp;·&nbsp; 2 revisões &nbsp;·&nbsp; 9 módulos &nbsp;·&nbsp; 34 itens
+:material-home-variant-outline: **Apartamento M&I** &nbsp;·&nbsp; 2 revisões &nbsp;·&nbsp; 9 módulos &nbsp;·&nbsp; 35 itens
 </div>
 
 Registro das alterações solicitadas ao projeto de interiores do apartamento, organizado por
@@ -29,10 +29,10 @@ critério de aceite==, de modo que o acompanhamento do detalhamento possa ser fe
 
     ---
 
-    11 itens em 5 módulos: sala, cozinha, lavanderia, quarto de hóspede e itens
+    12 itens em 5 módulos: sala, cozinha, lavanderia, quarto de hóspede e itens
     transversais. Uma página por ambiente.
 
-    `change`{ .t .t-change } 4 &nbsp; `feat`{ .t .t-feat } 4 &nbsp; `spike`{ .t .t-spike } 3
+    `change`{ .t .t-change } 4 &nbsp; `feat`{ .t .t-feat } 4 &nbsp; `spike`{ .t .t-spike } 4
 
     [:octicons-arrow-right-24: Abrir a revisão R2](r2/index.md)
 
@@ -43,8 +43,8 @@ critério de aceite==, de modo que o acompanhamento do detalhamento possa ser fe
 | Revisão | Escopo | Módulos | Itens | `change`{ .t .t-change } | `feat`{ .t .t-feat } | `spike`{ .t .t-spike } |
 |---|---|---:|---:|---:|---:|---:|
 | [R1](r1.md) | Escritório, suíte, banho suíte, banho social | 4 | 23 | 9 | 9 | 5 |
-| [R2](r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 5 | 11 | 4 | 4 | 3 |
-| **Total** | | **9** | **34** | **13** | **13** | **8** |
+| [R2](r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 5 | 12 | 4 | 4 | 4 |
+| **Total** | | **9** | **35** | **13** | **13** | **9** |
 
 ## Ambientes cobertos
 

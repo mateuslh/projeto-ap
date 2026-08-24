@@ -1,7 +1,7 @@
 # Revisão R2 — Sala, cozinha e serviço
 
 <div class="crumb" markdown>
-:material-home-outline: [Início](../index.md) › **Revisão R2** &nbsp;·&nbsp; 5 módulos &nbsp;·&nbsp; 11 itens &nbsp;·&nbsp; baseline não disponível
+:material-home-outline: [Início](../index.md) › **Revisão R2** &nbsp;·&nbsp; 5 módulos &nbsp;·&nbsp; 12 itens &nbsp;·&nbsp; baseline não disponível
 </div>
 
 Complementa a [Revisão R1](../r1.md), que tratou de escritório, suíte, banho suíte e banho
@@ -29,11 +29,12 @@ transversal a todo o apartamento.
 
     ---
 
-    Posição da geladeira, supressão do passa-pratos e lixeira embutida.
+    Posição da geladeira, supressão do passa-pratos, lixeira embutida e
+    cristaleira voltada para o corredor.
 
-    `change`{ .t .t-change } `feat`{ .t .t-feat } `spike`{ .t .t-spike }
+    `change`{ .t .t-change } `feat`{ .t .t-feat } `spike`{ .t .t-spike } `spike`{ .t .t-spike }
 
-    [:octicons-arrow-right-24: 3 itens](cozinha.md)
+    [:octicons-arrow-right-24: 4 itens](cozinha.md)
 
 -   :material-washing-machine:{ .lg .middle } &nbsp; **3. Lavanderia**
 
@@ -73,10 +74,11 @@ transversal a todo o apartamento.
 |---|---|---|---|---|
 | [`SAL-01`](sala.md#sal-01) | Gabinete sob a pia estendido até o piso | Sala | `change`{ .t .t-change } | — |
 | [`SAL-02`](sala.md#sal-02) | Gaveta oculta no aparador da entrada | Sala | `feat`{ .t .t-feat } | — |
-| [`SAL-03`](sala.md#sal-03) | Estudo de cristaleira | Sala | `spike`{ .t .t-spike } | — |
+| [`SAL-03`](sala.md#sal-03) | Estudo de cristaleira | Sala | `spike`{ .t .t-spike } | relacionado a [`COZ-04`](cozinha.md#coz-04) |
 | [`COZ-01`](cozinha.md#coz-01) | Estudo de troca de posição entre geladeira e torre quente | Cozinha | `spike`{ .t .t-spike } | — |
 | [`COZ-02`](cozinha.md#coz-02) | Supressão do passa-pratos | Cozinha | `change`{ .t .t-change } | — |
 | [`COZ-03`](cozinha.md#coz-03) | Lixeira embutida na bancada de mármore | Cozinha | `feat`{ .t .t-feat } | — |
+| [`COZ-04`](cozinha.md#coz-04) | Estudo de cristaleira voltada para o corredor | Cozinha | `spike`{ .t .t-spike } | relacionado a [`SAL-03`](sala.md#sal-03) |
 | [`LAV-01`](lavanderia.md#lav-01) | Tábua de passar embutida | Lavanderia | `feat`{ .t .t-feat } | — |
 | [`LAV-02`](lavanderia.md#lav-02) | Lugar para lixeira de grande porte | Lavanderia | `feat`{ .t .t-feat } | — |
 | [`HOS-01`](hospede.md#hos-01) | Reformulação da escrivaninha para uso de estudo | Quarto de hóspede | `change`{ .t .t-change } | — |
@@ -87,6 +89,9 @@ transversal a todo o apartamento.
 
 ```mermaid
 flowchart LR
+  SAL03["SAL-03<br/>Cristaleira<br/>na sala"]
+  COZ04["COZ-04<br/>Cristaleira<br/>na cozinha"]
+  COZ01["COZ-01<br/>Geladeira e<br/>torre quente"]
   GER01["GER-01<br/>Pontos de tomada<br/>existentes"]
   GER02["GER-02<br/>Torres de tomada<br/>embutidas"]
   LAV01["LAV-01<br/>Tábua de passar<br/>embutida"]
@@ -96,28 +101,34 @@ flowchart LR
   GER01 ==> GER02
   GER01 -.-> LAV01
   GER01 -.-> HOS01
+  GER01 -.-> COZ04
+  COZ01 -.-> COZ04
   LAV01 -.- LAV02
+  SAL03 -.- COZ04
 ```
 
 /// caption
-Seta cheia: dependência declarada. Seta tracejada: item que confere seus pontos elétricos
-contra o levantamento de `GER-01`. Linha tracejada sem seta: compatibilização mútua, sem
-precedência. Os demais itens da revisão são independentes entre si.
+Seta cheia: dependência declarada. Seta tracejada: item que parte de uma decisão tomada antes,
+sem precedência formal. Linha tracejada sem seta: itens que se decidem em conjunto, seja por
+compatibilização mútua, seja por serem alternativas entre si. Os demais itens da revisão são
+independentes.
 ///
 
-O levantamento de [`GER-01`](geral.md#ger-01) é o item de partida: três dos onze itens
-dependem dele, direta ou indiretamente.
+O levantamento de [`GER-01`](geral.md#ger-01) é o item de partida: quatro dos doze itens
+partem dele, direta ou indiretamente. [`SAL-03`](sala.md#sal-03) e
+[`COZ-04`](cozinha.md#coz-04) são as duas hipóteses para a cristaleira e se resolvem juntos —
+o apartamento deve ficar com a peça em um dos dois ambientes.
 
 ## Composição por tipo
 
 | Módulo | Itens | `change`{ .t .t-change } | `feat`{ .t .t-feat } | `spike`{ .t .t-spike } |
 |---|---:|---:|---:|---:|
 | [Sala](sala.md) | 3 | 1 | 1 | 1 |
-| [Cozinha](cozinha.md) | 3 | 1 | 1 | 1 |
+| [Cozinha](cozinha.md) | 4 | 1 | 1 | 2 |
 | [Lavanderia](lavanderia.md) | 2 | — | 2 | — |
 | [Quarto de hóspede](hospede.md) | 1 | 1 | — | — |
 | [Todos os cômodos](geral.md) | 2 | 1 | — | 1 |
-| **Total** | **11** | **4** | **4** | **3** |
+| **Total** | **12** | **4** | **4** | **4** |
 
 !!! info "Referência de página"
 
