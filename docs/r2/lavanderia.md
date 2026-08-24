@@ -48,11 +48,21 @@ de funcionamento, não de acabamento.
 
 A lavanderia deve abrigar a lixeira principal do apartamento, de grande porte. O que se pede é que ela ==tenha lugar definido em projeto==, e não que fique acomodada onde sobrar espaço.
 
-**A lixeira apoiada no piso é solução aceita**, desde que o ambiente comporte a peça sem prejuízo da circulação. Não é exigido compartimento fechado nem embutimento na marcenaria.
+==A lixeira apoiada no piso é a solução preferida==, desde que o ambiente comporte a peça sem prejuízo da circulação. Não é exigido compartimento fechado nem embutimento na marcenaria.
 
-!!! tip "Caminho possível"
+!!! warning "Elevar as máquinas é último recurso"
 
-    Caso a posição no piso não se acomode bem, uma alternativa é elevar a máquina de lavar e a secadora sobre base, empilhadas ou lado a lado, e usar o vão que se abre abaixo delas. A sugestão não constitui requisito fechado. Se adotada, confirmar a altura de uso resultante das máquinas, o acesso ao tambor e ao filtro e o apoio estrutural da base sob a carga em operação.
+    Uma saída cogitada foi elevar a máquina de lavar e a secadora sobre base, empilhadas ou lado
+    a lado, e usar o vão que se abre abaixo delas. **Essa possibilidade só deve ser desenvolvida
+    se não houver posição viável no piso.**
+
+    A base teria de ser muito reforçada, por causa do peso das máquinas e da vibração da lavadora
+    em operação, e nem o custo nem o risco dessa estrutura se justificam para acomodar uma
+    lixeira. Antes de recorrer a ela, esgotar as posições no piso.
+
+    Se ainda assim for o único caminho, o estudo precisa confirmar a altura de uso resultante das
+    máquinas, o acesso ao tambor e ao filtro e o dimensionamento estrutural da base sob a carga
+    em operação.
 
 !!! aceite "Critério de aceite"
 
@@ -60,3 +70,5 @@ A lavanderia deve abrigar a lixeira principal do apartamento, de grande porte. O
     - [ ] Circulação da lavanderia preservada com a lixeira no lugar, inclusive com as portas das máquinas abertas
     - [ ] Acesso para descarte e retirada do saco sem obstrução
     - [ ] Compatibilização com o módulo da tábua de [`LAV-01`](#lav-01) verificada
+    - [ ] Posições no piso esgotadas antes de qualquer proposta que envolva elevar as máquinas
+    - [ ] Caso a elevação se mostre inevitável, base dimensionada para a carga e a vibração em operação, com a altura de uso das máquinas verificada
