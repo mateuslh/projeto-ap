@@ -56,8 +56,18 @@ Hipótese a avaliar: incluir uma cristaleira na sala, com exposição de peças 
 
     Este item e [`COZ-04`](cozinha.md#coz-04) são as duas hipóteses para a mesma peça. Podem ser
     descartados individualmente, mas ==não os dois ao mesmo tempo==: o apartamento deve ficar
-    com cristaleira na sala **ou** na cozinha. As imagens de referência da peça estão
-    reunidas em [`COZ-04`](cozinha.md#coz-04).
+    com cristaleira na sala **ou** na cozinha. Se ambas as posições se mostrarem ruins, a
+    recomendação precisa apontar qual das duas é a menos onerosa e como viabilizá-la.
+
+:material-image-outline: **Imagem de referência**
+
+![Torre de marcenaria em madeira com portas de vidro, prateleiras iluminadas por LED e guarda de garrafas na base, junto à mesa de jantar](../assets/cristaleira_2.jpeg)
+
+/// caption
+Volume fechado com portas de vidro, prateleiras iluminadas e guarda de garrafas na base,
+posicionado junto à mesa. Referência de partido e de acabamento para a peça na sala; a
+hipótese equivalente para a cozinha está em [`COZ-04`](cozinha.md#coz-04).
+///
 
 !!! aceite "Critério de aceite"
 

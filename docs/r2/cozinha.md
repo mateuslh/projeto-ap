@@ -74,7 +74,7 @@ A bancada de mármore deve receber lixeira embutida de pequeno porte, do tipo ba
 
 Hipótese a avaliar: acomodar a cristaleira na cozinha, com a ==face de exposição voltada para o corredor==, de modo que as peças sejam vistas de fora do ambiente e não a partir da área de preparo.
 
-A referência mais próxima do que se busca é um nicho estreito e vertical, embutido na lateral da torre de marcenaria, fechado em vidro e com iluminação própria. É solução que ocupa pouca área de planta, porque aproveita a espessura de um móvel que já existe.
+A referência é um nicho estreito e vertical, embutido na lateral da torre de marcenaria, fechado em vidro e com iluminação própria. É solução que ocupa pouca área de planta, porque aproveita a espessura de um móvel que já existe.
 
 !!! abstract "Escopo do estudo"
 
@@ -90,20 +90,14 @@ A referência mais próxima do que se busca é um nicho estreito e vertical, emb
     com cristaleira na cozinha **ou** na sala. Se ambas as posições se mostrarem ruins, a
     recomendação precisa apontar qual das duas é a menos onerosa e como viabilizá-la.
 
-:material-image-multiple-outline: **Imagens de referência**
-
-<div class="grid" markdown>
+:material-image-outline: **Imagem de referência**
 
 ![Nicho vertical em vidro embutido na lateral da torre de marcenaria, com prateleiras iluminadas por LED e base em mármore](../assets/cristaleira_1.jpeg)
 
-![Torre de marcenaria com portas de vidro, prateleiras iluminadas e adega de garrafas na base](../assets/cristaleira_2.jpeg)
-
-</div>
-
 /// caption
-À esquerda, o partido mais próximo do que se pede: nicho estreito embutido na lateral do
-módulo, exposto para fora da cozinha. À direita, um volume fechado com portas de vidro e
-guarda de garrafas na base — referência de acabamento e de iluminação, não de posição.
+Nicho estreito embutido na lateral do módulo, fechado em vidro e iluminado, com a face de
+exposição voltada para fora da cozinha. A hipótese equivalente para a sala está em
+[`SAL-03`](sala.md#sal-03), com referência própria.
 ///
 
 !!! aceite "Critério de aceite"
