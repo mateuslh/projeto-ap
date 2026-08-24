@@ -254,3 +254,19 @@
   margin: 1.2em 0;
   text-align: center;
 }
+
+/* Vídeo de referência incorporado. O embed é servido pelo próprio provedor;
+   a legenda traz sempre o link direto, para o caso de o iframe não carregar. */
+.md-typeset .video-ref {
+  margin: 1.2em 0;
+}
+
+.md-typeset .video-ref iframe {
+  display: block;
+  width: 100%;
+  max-width: 325px;
+  height: 750px;
+  border: 0;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0 1px var(--md-default-fg-color--lightest);
+}

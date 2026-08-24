@@ -34,16 +34,28 @@ Não se trata de rever o projeto elétrico nem de propor pontos novos. O que se 
 
 `spike`{ .t .t-spike title="Exige estudo antes de virar decisão" } · depende de [`GER-01`](#ger-01)
 
-A partir dos pontos levantados em [`GER-01`](#ger-01), verificar em quais deles cabe uma torre de tomada embutida — ponto escamoteável, alojado na bancada ou no tampo e recolhido quando fora de uso. O caso mais imediato é o da pia da sala.
+A partir dos pontos levantados em [`GER-01`](#ger-01), indicar onde vale trocar a tomada aparente por uma torre de tomada embutida — ponto escamoteável, alojado na bancada ou no tampo e recolhido quando fora de uso.
+
+Não se trata de propor torre em todo ponto existente. A troca se justifica onde os ==dois critérios abaixo== se encontram:
+
+| Critério | Leitura |
+|---|---|
+| **Demanda** | O trecho pede mais tomadas do que o ponto existente oferece. |
+| **Partido** | Faz sentido tirar a entrada da vista ali, seja porque a tomada aparente compromete o acabamento, seja porque ela cai em superfície de uso. |
+
+Onde só um dos dois se aplica, ou nenhum, o ponto permanece como está.
 
 !!! abstract "Escopo do estudo"
 
-    Interessa saber onde o embutimento é possível, considerando a espessura da bancada e o espaço livre abaixo dela. Onde não couber, o ponto permanece como está.
+    Interessa saber em quais pontos os dois critérios se encontram e, nesses, se o embutimento
+    é construtivamente possível, considerando a espessura da bancada e o espaço livre abaixo
+    dela. A resposta é a lista dos pontos que recebem torre, com a justificativa de cada um.
 
 !!! aceite "Critério de aceite"
 
-    - [ ] Pontos existentes avaliados quanto à possibilidade de receber torre embutida
-    - [ ] Viabilidade do embutimento na pia da sala respondida de forma explícita
+    - [ ] Pontos existentes avaliados quanto à demanda por tomadas adicionais
+    - [ ] Pontos em que a entrada aparente convém desaparecer identificados
+    - [ ] Pontos que atendem aos dois critérios avaliados quanto à viabilidade construtiva do embutimento
     - [ ] Torre alinhada à superfície quando recolhida, sem ressalto aparente
     - [ ] Espaço livre sob a bancada conferido contra gabinetes, gavetas e instalações
-    - [ ] Pontos em que o embutimento não é viável listados, mantidos na configuração atual
+    - [ ] Pontos que permanecem na configuração atual listados, com o motivo

@@ -19,6 +19,22 @@ Prever tábua de passar embutida na marcenaria da lavanderia, ==recolhida quando
 
     O sistema fica a seu critério, seja em módulo com tábua escamoteável, seja em gaveta ou porta com tábua rebatível, desde que a peça permaneça inteiramente contida no móvel quando recolhida.
 
+:material-play-box-outline: **Vídeo de referência**
+
+<div class="video-ref">
+<iframe src="https://www.tiktok.com/embed/v2/7259097737768242437"
+        title="Tábua de passar retrátil embutida na marcenaria"
+        allow="encrypted-media; fullscreen" allowfullscreen loading="lazy"
+        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+
+/// caption
+Tábua retrátil recolhida na marcenaria da área de serviço — o partido que se busca. Vídeo de
+[Lorrayne Zucolotto Arquitetura](https://www.tiktok.com/@lorraynezucolottoarq), no
+[TikTok](https://www.tiktok.com/@lorraynezucolottoarq/video/7259097737768242437). É referência
+de funcionamento, não de acabamento.
+///
+
 !!! aceite "Critério de aceite"
 
     - [ ] Módulo com a tábua detalhado em planta e elevação
