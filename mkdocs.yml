@@ -14,15 +14,21 @@ strict: true
 theme:
   name: material
   language: pt-BR
+  favicon: assets/favicon.svg
   icon:
+    logo: material/home-variant-outline
     repo: fontawesome/brands/github
   font:
     text: Inter
     code: JetBrains Mono
   features:
     - navigation.instant
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.indexes
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
     # Sem isto os blocos ficam colapsados por padrão e o menu parece vazio
     # nas páginas fora deles (Início, Como ler).
     - navigation.expand
@@ -30,6 +36,7 @@ theme:
     - navigation.footer
     - toc.follow
     - content.action.edit
+    - content.action.view
     - content.tooltips
     - content.code.copy
     - search.suggest
@@ -126,6 +133,10 @@ plugins:
       loop: false
       effect: zoom
       draggable: true
+
+# Acrescenta um hash aos assets próprios para evitar versões antigas no navegador.
+hooks:
+  - hooks/cache_bust.py
 
 extra_css:
   - assets/extra.css

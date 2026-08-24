@@ -1,15 +1,26 @@
+<div class="project-hero" markdown>
+
+<span class="project-hero__eyebrow">:material-floor-plan: Caderno de alterações do projeto</span>
+
 # Apartamento M&I
 
-<div class="crumb" markdown>
-:material-home-variant-outline: **Solicitações de alteração** &nbsp;·&nbsp; 2 blocos &nbsp;·&nbsp; 9 ambientes &nbsp;·&nbsp; 35 itens
+Registro claro e rastreável das decisões do projeto de interiores — organizado por ambiente,
+revisão, dependências e critérios de aceite.
+
+<div class="project-hero__actions" markdown>
+[:material-book-open-variant: Como ler](convencoes.md){ .md-button .md-button--primary }
+[:material-bed-king-outline: Privativos](privativos/index.md){ .md-button }
+[:material-sofa-outline: Sociais](sociais/index.md){ .md-button }
 </div>
 
-Registro das alterações solicitadas ao projeto de interiores do apartamento. As solicitações se
-organizam em ==blocos de ambientes==, e cada bloco acumula suas ==revisões==. Cada item é
-numerado, com tipo, dependências e critério de aceite, de modo que o acompanhamento do
-detalhamento possa ser feito item a item.
+<div class="project-hero__stats">
+  <div><strong>35</strong><span>itens</span></div>
+  <div><strong>9</strong><span>ambientes</span></div>
+  <div><strong>2</strong><span>blocos</span></div>
+  <div><strong>2</strong><span>revisões</span></div>
+</div>
 
-[:material-book-open-variant: Como ler este documento](convencoes.md){ .md-button .md-button--primary }
+</div>
 
 ## Blocos
 
