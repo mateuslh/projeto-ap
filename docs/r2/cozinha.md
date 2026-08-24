@@ -83,12 +83,14 @@ A referência é um nicho estreito e vertical, embutido na lateral da torre de m
     guarda do módulo que a recebe. Como a posição da torre de marcenaria é o que se decide em
     [`COZ-01`](#coz-01), o estudo deve partir da configuração recomendada lá.
 
-!!! warning "Decisão conjunta com SAL-03"
+    A cozinha é ==uma das duas posições candidatas==. A outra é a sala, em
+    [`SAL-03`](sala.md#sal-03). Os dois itens estudam a mesma peça e se respondem juntos.
 
-    Este item e [`SAL-03`](sala.md#sal-03) são as duas hipóteses para a mesma peça. Podem ser
-    descartados individualmente, mas ==não os dois ao mesmo tempo==: o apartamento deve ficar
-    com cristaleira na cozinha **ou** na sala. Se ambas as posições se mostrarem ruins, a
-    recomendação precisa apontar qual das duas é a menos onerosa e como viabilizá-la.
+!!! failure "Critério de descarte"
+
+    Se a cristaleira não couber bem nem na cozinha nem na sala, ==o parecer negativo é resultado
+    válido== e fecha os dois itens. Não se pede que a peça seja acomodada de todo jeito: o que
+    se pede é a verificação das duas posições e uma resposta fundamentada, seja ela qual for.
 
 :material-image-outline: **Imagem de referência**
 
@@ -107,4 +109,4 @@ exposição voltada para fora da cozinha. A hipótese equivalente para a sala es
     - [ ] Impacto na capacidade de guarda do módulo que recebe o nicho avaliado
     - [ ] Posição conferida contra a configuração recomendada em [`COZ-01`](#coz-01)
     - [ ] Iluminação da peça prevista, com o ponto elétrico conferido contra [`GER-01`](geral.md#ger-01)
-    - [ ] Recomendação explícita a favor ou contra, considerada a decisão conjunta com [`SAL-03`](sala.md#sal-03)
+    - [ ] Recomendação explícita a favor ou contra a inclusão na cozinha, articulada com o resultado de [`SAL-03`](sala.md#sal-03)

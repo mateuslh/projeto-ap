@@ -50,14 +50,17 @@ Hipótese a avaliar: incluir uma cristaleira na sala, com exposição de peças 
 
 !!! abstract "Escopo do estudo"
 
-    Interessa saber onde a peça caberia sem prejuízo da circulação e do layout aprovado, e se a exposição se sustenta esteticamente diante do restante do ambiente. Caso o resultado sobrecarregue visualmente o ambiente, a hipótese pode ser descartada em favor da posição estudada em [`COZ-04`](cozinha.md#coz-04).
+    Interessa saber onde a peça caberia sem prejuízo da circulação e do layout aprovado, e se a
+    exposição se sustenta esteticamente diante do restante do ambiente.
 
-!!! warning "Decisão conjunta com COZ-04"
+    A sala é ==uma das duas posições candidatas==. A outra é a cozinha, em
+    [`COZ-04`](cozinha.md#coz-04). Os dois itens estudam a mesma peça e se respondem juntos.
 
-    Este item e [`COZ-04`](cozinha.md#coz-04) são as duas hipóteses para a mesma peça. Podem ser
-    descartados individualmente, mas ==não os dois ao mesmo tempo==: o apartamento deve ficar
-    com cristaleira na sala **ou** na cozinha. Se ambas as posições se mostrarem ruins, a
-    recomendação precisa apontar qual das duas é a menos onerosa e como viabilizá-la.
+!!! failure "Critério de descarte"
+
+    Se a cristaleira não couber bem nem na sala nem na cozinha, ==o parecer negativo é resultado
+    válido== e fecha os dois itens. Não se pede que a peça seja acomodada de todo jeito: o que
+    se pede é a verificação das duas posições e uma resposta fundamentada, seja ela qual for.
 
 :material-image-outline: **Imagem de referência**
 
@@ -73,4 +76,4 @@ hipótese equivalente para a cozinha está em [`COZ-04`](cozinha.md#coz-04).
 
     - [ ] Estudo com a cristaleira posicionada em planta e elevação
     - [ ] Verificação de circulação e de interferência com o layout aprovado
-    - [ ] Recomendação explícita a favor ou contra a inclusão, considerada a decisão conjunta com [`COZ-04`](cozinha.md#coz-04)
+    - [ ] Recomendação explícita a favor ou contra a inclusão na sala, articulada com o resultado de [`COZ-04`](cozinha.md#coz-04)

@@ -116,8 +116,8 @@ independentes.
 
 O levantamento de [`GER-01`](geral.md#ger-01) é o item de partida: quatro dos doze itens
 partem dele, direta ou indiretamente. [`SAL-03`](sala.md#sal-03) e
-[`COZ-04`](cozinha.md#coz-04) são as duas hipóteses para a cristaleira e se resolvem juntos —
-o apartamento deve ficar com a peça em um dos dois ambientes.
+[`COZ-04`](cozinha.md#coz-04) estudam a mesma peça em dois ambientes e se respondem juntos: o
+parecer diz em qual das duas posições a cristaleira cabe melhor, ou que não cabe em nenhuma.
 
 ## Composição por tipo
 
