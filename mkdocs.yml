@@ -20,6 +20,9 @@ theme:
     - navigation.instant
     - navigation.tracking
     - navigation.indexes
+    # Sem isto os blocos ficam colapsados por padrão e o menu parece vazio
+    # nas páginas fora deles (Início, Como ler).
+    - navigation.expand
     - navigation.top
     - navigation.footer
     - toc.follow

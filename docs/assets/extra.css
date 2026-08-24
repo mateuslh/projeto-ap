@@ -225,6 +225,13 @@
   border-top: none;
 }
 
+/* Um <hr> logo antes do título já faz a separação; sem isto saem duas linhas coladas */
+.md-typeset hr + h2 {
+  margin-top: 1.6em;
+  padding-top: 0;
+  border-top: none;
+}
+
 .md-typeset .grid.cards > ul > li {
   transition: border-color 125ms, box-shadow 125ms, transform 125ms;
 }
