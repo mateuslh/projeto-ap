@@ -1,11 +1,11 @@
 # 5. Todos os cômodos
 
 <div class="crumb" markdown>
-:material-power-socket-de: [Revisão R2](index.md) › **Todos os cômodos** &nbsp;·&nbsp; 2 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../convencoes.md)
+:material-power-socket-de: [Sociais e de serviço](../index.md) › [Revisão 1](index.md) › **Todos os cômodos** &nbsp;·&nbsp; 2 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../../convencoes.md)
 </div>
 
 Itens transversais, aplicáveis a todos os ambientes do apartamento, inclusive aos tratados no
-[R1](../r1.md). Ambos partem da infraestrutura elétrica ==já existente==, e não de pontos novos.
+[R1](../../privativos/r1/index.md). Ambos partem da infraestrutura elétrica ==já existente==, e não de pontos novos.
 
 | ID | Item | Tipo | Depende de |
 |---|---|---|---|

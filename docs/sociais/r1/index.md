@@ -1,17 +1,17 @@
-# Revisão R2 — Sala, cozinha e serviço
+# Revisão 1 — Sociais e de serviço
 
 <div class="crumb" markdown>
-:material-home-outline: [Início](../index.md) › **Revisão R2** &nbsp;·&nbsp; 5 módulos &nbsp;·&nbsp; 12 itens &nbsp;·&nbsp; baseline não disponível
+:material-sofa-outline: [Sociais e de serviço](../index.md) › **Revisão 1** &nbsp;·&nbsp; 5 ambientes &nbsp;·&nbsp; 12 itens &nbsp;·&nbsp; baseline não disponível
 </div>
 
-Complementa a [Revisão R1](../r1.md), que tratou de escritório, suíte, banho suíte e banho
-social. Esta revisão trata dos ==ambientes sociais e de serviço== e de um requisito elétrico
-transversal a todo o apartamento.
+Primeira rodada de solicitações para os ==ambientes sociais e de serviço==, mais um requisito
+elétrico transversal a todo o apartamento. Corre em paralelo à
+[Revisão 1 dos privativos](../../privativos/r1/index.md), que trata de escritório, suíte e banhos.
 
-[:material-book-open-variant: Como ler este documento](../convencoes.md){ .md-button .md-button--primary }
-[:material-numeric-1-box-outline: Revisão R1](../r1.md){ .md-button }
+[:material-book-open-variant: Como ler este documento](../../convencoes.md){ .md-button .md-button--primary }
+[:material-view-dashboard-outline: Painel do bloco](../index.md){ .md-button }
 
-## Módulos
+## Ambientes
 
 <div class="grid cards" markdown>
 
@@ -46,7 +46,7 @@ transversal a todo o apartamento.
 
     [:octicons-arrow-right-24: 2 itens](lavanderia.md)
 
--   :material-bed-outline:{ .lg .middle } &nbsp; **4. Quarto de hóspede**
+-   :material-bed-outline:{ .lg .middle } &nbsp; **4. Quarto de hóspede/filho**
 
     ---
 
@@ -70,7 +70,7 @@ transversal a todo o apartamento.
 
 ## Quadro geral de itens
 
-| ID | Item | Módulo | Tipo | Depende de |
+| ID | Item | Ambiente | Tipo | Depende de |
 |---|---|---|---|---|
 | [`SAL-01`](sala.md#sal-01) | Gabinete sob a pia estendido até o piso | Sala | `change`{ .t .t-change } | — |
 | [`SAL-02`](sala.md#sal-02) | Gaveta oculta no aparador da entrada | Sala | `feat`{ .t .t-feat } | — |
@@ -81,7 +81,7 @@ transversal a todo o apartamento.
 | [`COZ-04`](cozinha.md#coz-04) | Estudo de cristaleira voltada para o corredor | Cozinha | `spike`{ .t .t-spike } | relacionado a [`SAL-03`](sala.md#sal-03) |
 | [`LAV-01`](lavanderia.md#lav-01) | Tábua de passar embutida | Lavanderia | `feat`{ .t .t-feat } | — |
 | [`LAV-02`](lavanderia.md#lav-02) | Lugar para lixeira de grande porte | Lavanderia | `feat`{ .t .t-feat } | — |
-| [`HOS-01`](hospede.md#hos-01) | Reformulação da escrivaninha para uso de estudo | Quarto de hóspede | `change`{ .t .t-change } | — |
+| [`HOS-01`](hospede.md#hos-01) | Reformulação da escrivaninha para uso de estudo | Quarto de hóspede/filho | `change`{ .t .t-change } | — |
 | [`GER-01`](geral.md#ger-01) | Compatibilização dos pontos de tomada existentes | Todos os cômodos | `change`{ .t .t-change } | — |
 | [`GER-02`](geral.md#ger-02) | Torres de tomada nos pontos existentes | Todos os cômodos | `spike`{ .t .t-spike } | [`GER-01`](geral.md#ger-01) |
 
@@ -121,18 +121,18 @@ parecer diz em qual das duas posições a cristaleira cabe melhor, ou que não c
 
 ## Composição por tipo
 
-| Módulo | Itens | `change`{ .t .t-change } | `feat`{ .t .t-feat } | `spike`{ .t .t-spike } |
+| Ambiente | Itens | `change`{ .t .t-change } | `feat`{ .t .t-feat } | `spike`{ .t .t-spike } |
 |---|---:|---:|---:|---:|
 | [Sala](sala.md) | 3 | 1 | 1 | 1 |
 | [Cozinha](cozinha.md) | 4 | 1 | 1 | 2 |
 | [Lavanderia](lavanderia.md) | 2 | — | 2 | — |
-| [Quarto de hóspede](hospede.md) | 1 | 1 | — | — |
+| [Quarto de hóspede/filho](hospede.md) | 1 | 1 | — | — |
 | [Todos os cômodos](geral.md) | 2 | 1 | — | 1 |
 | **Total** | **12** | **4** | **4** | **4** |
 
 !!! info "Referência de página"
 
-    Diferentemente do R1, os itens desta revisão não trazem referência de página, pois os
-    ambientes tratados aqui não constam do caderno usado como baseline naquela revisão. A
+    Os itens desta revisão não trazem referência de página: os ambientes tratados aqui não
+    constam do caderno **ETAPA CRIATIVA APTO M&I**, que serve de baseline aos privativos. A
     localização de cada item se dá pelo ambiente. As referências de prancha serão incorporadas
     na consolidação, assim que o material correspondente for disponibilizado.

@@ -1,74 +1,89 @@
-# Solicitações de alteração
+# Apartamento M&I
 
 <div class="crumb" markdown>
-:material-home-variant-outline: **Apartamento M&I** &nbsp;·&nbsp; 2 revisões &nbsp;·&nbsp; 9 módulos &nbsp;·&nbsp; 35 itens
+:material-home-variant-outline: **Solicitações de alteração** &nbsp;·&nbsp; 2 blocos &nbsp;·&nbsp; 9 ambientes &nbsp;·&nbsp; 35 itens
 </div>
 
-Registro das alterações solicitadas ao projeto de interiores do apartamento, organizado por
-revisão e por ambiente. Cada solicitação é um item numerado, com ==tipo, dependências e
-critério de aceite==, de modo que o acompanhamento do detalhamento possa ser feito item a item.
+Registro das alterações solicitadas ao projeto de interiores do apartamento. As solicitações se
+organizam em ==blocos de ambientes==, e cada bloco acumula suas ==revisões==. Cada item é
+numerado, com tipo, dependências e critério de aceite, de modo que o acompanhamento do
+detalhamento possa ser feito item a item.
 
 [:material-book-open-variant: Como ler este documento](convencoes.md){ .md-button .md-button--primary }
 
-## Revisões
+## Blocos
 
 <div class="grid cards" markdown>
 
--   :material-numeric-1-box:{ .lg .middle } &nbsp; **R1 — Escritório, suíte e banhos**
+-   :material-bed-king-outline:{ .lg .middle } &nbsp; **Privativos**
 
     ---
 
-    23 itens em 4 módulos: escritório, suíte, banho suíte e banho social.
-    Referenciados página a página no caderno usado como baseline.
+    Escritório, suíte, banho suíte e banho social. Referenciados página a
+    página no caderno **ETAPA CRIATIVA APTO M&I**.
+
+    1 revisão &nbsp;·&nbsp; 23 itens
 
     `change`{ .t .t-change } 9 &nbsp; `feat`{ .t .t-feat } 9 &nbsp; `spike`{ .t .t-spike } 5
 
-    [:octicons-arrow-right-24: Abrir a revisão R1](r1.md)
+    [:octicons-arrow-right-24: Abrir o bloco](privativos/index.md)
 
--   :material-numeric-2-box:{ .lg .middle } &nbsp; **R2 — Sala, cozinha e serviço**
+-   :material-sofa-outline:{ .lg .middle } &nbsp; **Sociais e de serviço**
 
     ---
 
-    12 itens em 5 módulos: sala, cozinha, lavanderia, quarto de hóspede e itens
-    transversais. Uma página por ambiente.
+    Sala, cozinha, lavanderia, quarto de hóspede/filho e os itens transversais
+    a todo o apartamento. Sem baseline registrado.
+
+    1 revisão &nbsp;·&nbsp; 12 itens
 
     `change`{ .t .t-change } 4 &nbsp; `feat`{ .t .t-feat } 4 &nbsp; `spike`{ .t .t-spike } 4
 
-    [:octicons-arrow-right-24: Abrir a revisão R2](r2/index.md)
+    [:octicons-arrow-right-24: Abrir o bloco](sociais/index.md)
 
 </div>
 
+## Como o registro se organiza
+
+```text
+bloco de ambientes
+└── revisão
+    └── ambiente
+        └── item  ·  tipo, dependências, critério de aceite
+```
+
+Uma revisão publicada não é reescrita. Novas solicitações para um ambiente abrem a **revisão
+seguinte dentro do mesmo bloco**, e a numeração dos IDs continua de onde parou — `SAL-04` vem
+depois de `SAL-03`, esteja em que revisão estiver.
+
 ## Panorama
 
-| Revisão | Escopo | Módulos | Itens | `change`{ .t .t-change } | `feat`{ .t .t-feat } | `spike`{ .t .t-spike } |
-|---|---|---:|---:|---:|---:|---:|
-| [R1](r1.md) | Escritório, suíte, banho suíte, banho social | 4 | 23 | 9 | 9 | 5 |
-| [R2](r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 5 | 12 | 4 | 4 | 4 |
-| **Total** | | **9** | **35** | **13** | **13** | **9** |
+| Bloco | Ambientes | Revisões | Itens | `change`{ .t .t-change } | `feat`{ .t .t-feat } | `spike`{ .t .t-spike } |
+|---|---:|---:|---:|---:|---:|---:|
+| [Privativos](privativos/index.md) | 4 | 1 | 23 | 9 | 9 | 5 |
+| [Sociais e de serviço](sociais/index.md) | 5 | 1 | 12 | 4 | 4 | 4 |
+| **Total** | **9** | **2** | **35** | **13** | **13** | **9** |
 
 ## Ambientes cobertos
 
 <div class="grid cards" markdown>
 
--   **Privativos** — revisão [R1](r1.md)
+-   **Privativos** — [revisão 1](privativos/r1/index.md)
 
-    :material-desk: Escritório &nbsp;·&nbsp; :material-bed-king-outline: Suíte &nbsp;·&nbsp;
-    :material-shower-head: Banho suíte &nbsp;·&nbsp; :material-toilet: Banho social
+    :material-desk: [Escritório](privativos/r1/escritorio.md) &nbsp;·&nbsp;
+    :material-bed-king-outline: [Suíte](privativos/r1/suite.md) &nbsp;·&nbsp;
+    :material-shower-head: [Banho suíte](privativos/r1/banho-suite.md) &nbsp;·&nbsp;
+    :material-toilet: [Banho social](privativos/r1/banho-social.md)
 
--   **Sociais e de serviço** — revisão [R2](r2/index.md)
+-   **Sociais e de serviço** — [revisão 1](sociais/r1/index.md)
 
-    :material-sofa-outline: Sala &nbsp;·&nbsp; :material-countertop-outline: Cozinha &nbsp;·&nbsp;
-    :material-washing-machine: Lavanderia &nbsp;·&nbsp; :material-bed-outline: Quarto de hóspede
-    &nbsp;·&nbsp; :material-power-socket-de: Todos os cômodos
+    :material-sofa-outline: [Sala](sociais/r1/sala.md) &nbsp;·&nbsp;
+    :material-countertop-outline: [Cozinha](sociais/r1/cozinha.md) &nbsp;·&nbsp;
+    :material-washing-machine: [Lavanderia](sociais/r1/lavanderia.md) &nbsp;·&nbsp;
+    :material-bed-outline: [Quarto de hóspede/filho](sociais/r1/hospede.md) &nbsp;·&nbsp;
+    :material-power-socket-de: [Todos os cômodos](sociais/r1/geral.md)
 
 </div>
-
-## Baseline
-
-A revisão R1 toma como baseline o caderno **ETAPA CRIATIVA APTO M&I**, versionado na raiz do
-repositório, e referencia suas páginas item a item. Os ambientes tratados no R2 não constam
-desse caderno: as referências de prancha serão incorporadas quando o material correspondente
-for disponibilizado.
 
 !!! note "Sobre os critérios de aceite"
 

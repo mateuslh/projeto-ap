@@ -1,5 +1,5 @@
 site_name: Apartamento M&I
-site_description: Solicitações de alteração ao projeto de interiores, por revisão e por ambiente.
+site_description: Solicitações de alteração ao projeto de interiores, organizadas por bloco de ambientes e por revisão.
 site_url: https://mateuslh.github.io/projeto-ap/
 site_author: Mateus Leal Hemkemeier
 
@@ -19,7 +19,6 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - navigation.sections
     - navigation.indexes
     - navigation.top
     - navigation.footer
@@ -49,15 +48,25 @@ theme:
 nav:
   - Início: index.md
   - Como ler: convencoes.md
-  - Revisões:
-      - R1 — Escritório, suíte e banhos: r1.md
-      - R2 — Sala, cozinha e serviço:
-          - r2/index.md
-          - 1. Sala: r2/sala.md
-          - 2. Cozinha: r2/cozinha.md
-          - 3. Lavanderia: r2/lavanderia.md
-          - 4. Quarto de hóspede: r2/hospede.md
-          - 5. Todos os cômodos: r2/geral.md
+  # Um bloco de ambientes por seção; dentro dele, uma pasta por revisão.
+  # Uma revisão nova entra como privativos/r2/ ou sociais/r2/, sem renomear nada.
+  - Privativos:
+      - privativos/index.md
+      - Revisão 1:
+          - privativos/r1/index.md
+          - 1. Escritório: privativos/r1/escritorio.md
+          - 2. Suíte: privativos/r1/suite.md
+          - 3. Banho suíte: privativos/r1/banho-suite.md
+          - 4. Banho social: privativos/r1/banho-social.md
+  - Sociais e de serviço:
+      - sociais/index.md
+      - Revisão 1:
+          - sociais/r1/index.md
+          - 1. Sala: sociais/r1/sala.md
+          - 2. Cozinha: sociais/r1/cozinha.md
+          - 3. Lavanderia: sociais/r1/lavanderia.md
+          - 4. Quarto de hóspede/filho: sociais/r1/hospede.md
+          - 5. Todos os cômodos: sociais/r1/geral.md
 
 markdown_extensions:
   - abbr

@@ -1,40 +1,49 @@
 # Apartamento M&I — solicitações de alteração
 
-Registro das alterações solicitadas ao projeto de interiores do apartamento, organizado por
-revisão e por ambiente. Cada solicitação é um item numerado, com tipo, dependências e critério
-de aceite em formato de checklist.
+Registro das alterações solicitadas ao projeto de interiores do apartamento. As solicitações se
+organizam em **blocos de ambientes**, e cada bloco acumula suas **revisões**. Cada solicitação é
+um item numerado, com tipo, dependências e critério de aceite em formato de checklist.
 
 **Site publicado:** <https://mateuslh.github.io/projeto-ap/>
 
 ## Conteúdo
 
-| Documento | Escopo | Itens |
-|---|---|---:|
-| [R1](docs/r1.md) | Escritório, suíte, banho suíte, banho social | 23 |
-| [R2](docs/r2/index.md) | Sala, cozinha, lavanderia, quarto de hóspede, geral | 12 |
-| [Como ler](docs/convencoes.md) | Tipos de item, dependências e callouts | — |
+| Bloco | Ambientes | Revisões | Itens |
+|---|---|---:|---:|
+| [Privativos](docs/privativos/index.md) | Escritório, suíte, banho suíte, banho social | 1 | 23 |
+| [Sociais e de serviço](docs/sociais/index.md) | Sala, cozinha, lavanderia, quarto de hóspede/filho, itens gerais | 1 | 12 |
+| [Como ler](docs/convencoes.md) | Tipos de item, dependências e callouts | — | — |
 
 ## Estrutura do repositório
 
 ```text
 docs/
-  index.md            página inicial do site
+  index.md            painel do projeto
   convencoes.md       tipos de item, dependências e callouts
-  r1.md               revisão R1, página única
-  r2/                 revisão R2, uma página por ambiente
-    index.md          visão geral, quadro dos 12 itens e composição por tipo
-    sala.md           1. Sala
-    cozinha.md        2. Cozinha
-    lavanderia.md     3. Lavanderia
-    hospede.md        4. Quarto de hóspede
-    geral.md          5. Todos os cômodos
+  privativos/         bloco: escritório, suíte, banho suíte, banho social
+    index.md          painel do bloco, com o histórico de revisões
+    r1/
+      index.md        visão geral da revisão 1
+      escritorio.md   1. Escritório
+      suite.md        2. Suíte
+      banho-suite.md  3. Banho suíte
+      banho-social.md 4. Banho social
+  sociais/            bloco: sala, cozinha, lavanderia, hóspede/filho, gerais
+    index.md          painel do bloco, com o histórico de revisões
+    r1/
+      index.md        visão geral da revisão 1
+      sala.md         1. Sala
+      cozinha.md      2. Cozinha
+      lavanderia.md   3. Lavanderia
+      hospede.md      4. Quarto de hóspede/filho
+      geral.md        5. Todos os cômodos
   assets/             imagens de referência e CSS adicional
 includes/
   abreviacoes.md      glossário anexado automaticamente a todas as páginas
 mkdocs.yml            configuração do site
 requirements.txt      dependências do build, com versões fixadas
 .github/workflows/    pipeline de publicação no GitHub Pages
-ETAPA CRIATIVA APTO M&I.pdf   caderno usado como baseline da revisão R1
+ETAPA CRIATIVA APTO M&I.pdf   caderno usado como baseline do bloco privativos
 ```
 
 ## Rodando localmente
@@ -79,4 +88,15 @@ pipeline em vez de ir para o ar silenciosamente.
   tooltip em todas as páginas, sem precisar de repetição no texto.
 - Todo item declara tipo (`change`, `feat` ou `spike`), dependências e critério de aceite.
 - Alterações no conteúdo entram por revisão: uma revisão publicada não é reescrita, e novas
-  solicitações abrem a revisão seguinte.
+  solicitações abrem a revisão seguinte **dentro do mesmo bloco**.
+
+## Abrindo uma revisão nova
+
+1. Crie a pasta `docs/<bloco>/r<N>/` com um `index.md` e uma página por ambiente tocado.
+2. Registre a revisão no `nav` do `mkdocs.yml`, dentro do bloco correspondente.
+3. Acrescente a linha na tabela **Revisões** do painel do bloco
+   (`docs/<bloco>/index.md`) e atualize as contagens dele e da home.
+4. Continue a numeração dos IDs de onde parou: se a revisão 1 fechou em `SAL-03`,
+   a revisão 2 começa em `SAL-04`.
+
+Nada precisa ser renomeado: as revisões anteriores permanecem nas URLs em que já estão.

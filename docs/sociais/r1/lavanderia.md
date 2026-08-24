@@ -1,7 +1,7 @@
 # 3. Lavanderia
 
 <div class="crumb" markdown>
-:material-washing-machine: [Revisão R2](index.md) › **Lavanderia** &nbsp;·&nbsp; 2 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../convencoes.md)
+:material-washing-machine: [Sociais e de serviço](../index.md) › [Revisão 1](index.md) › **Lavanderia** &nbsp;·&nbsp; 2 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../../convencoes.md)
 </div>
 
 | ID | Item | Tipo | Depende de |

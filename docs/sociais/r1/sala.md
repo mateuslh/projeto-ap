@@ -1,7 +1,7 @@
 # 1. Sala
 
 <div class="crumb" markdown>
-:material-sofa-outline: [Revisão R2](index.md) › **Sala** &nbsp;·&nbsp; 3 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../convencoes.md)
+:material-sofa-outline: [Sociais e de serviço](../index.md) › [Revisão 1](index.md) › **Sala** &nbsp;·&nbsp; 3 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../../convencoes.md)
 </div>
 
 | ID | Item | Tipo | Depende de |
@@ -64,7 +64,7 @@ Hipótese a avaliar: incluir uma cristaleira na sala, com exposição de peças 
 
 :material-image-outline: **Imagem de referência**
 
-![Torre de marcenaria em madeira com portas de vidro, prateleiras iluminadas por LED e guarda de garrafas na base, junto à mesa de jantar](../assets/cristaleira_2.jpeg)
+![Torre de marcenaria em madeira com portas de vidro, prateleiras iluminadas por LED e guarda de garrafas na base, junto à mesa de jantar](../../assets/cristaleira_2.jpeg)
 
 /// caption
 Volume fechado com portas de vidro, prateleiras iluminadas e guarda de garrafas na base,

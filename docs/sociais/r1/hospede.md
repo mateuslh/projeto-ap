@@ -1,7 +1,7 @@
-# 4. Quarto de hóspede
+# 4. Quarto de hóspede/filho
 
 <div class="crumb" markdown>
-:material-bed-outline: [Revisão R2](index.md) › **Quarto de hóspede** &nbsp;·&nbsp; 1 item &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../convencoes.md)
+:material-bed-outline: [Sociais e de serviço](../index.md) › [Revisão 1](index.md) › **Quarto de hóspede/filho** &nbsp;·&nbsp; 1 item &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../../convencoes.md)
 </div>
 
 | ID | Item | Tipo | Depende de |
@@ -12,7 +12,7 @@
 
 `change`{ .t .t-change title="Alteração de algo já projetado" }
 
-A escrivaninha e o mobiliário de apoio do quarto de hóspede devem ser reformulados para
+A escrivaninha e o mobiliário de apoio do quarto de hóspede/filho devem ser reformulados para
 ==uso efetivo de estudo==, e não apenas como composição do ambiente. O posto precisa comportar
 longos períodos sentado, com postura adequada e material de estudo à mão.
 

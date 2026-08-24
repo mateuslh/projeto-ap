@@ -1,7 +1,7 @@
 # 2. Cozinha
 
 <div class="crumb" markdown>
-:material-countertop-outline: [Revisão R2](index.md) › **Cozinha** &nbsp;·&nbsp; 4 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../convencoes.md)
+:material-countertop-outline: [Sociais e de serviço](../index.md) › [Revisão 1](index.md) › **Cozinha** &nbsp;·&nbsp; 4 itens &nbsp;·&nbsp; [:material-book-open-variant: Como ler](../../convencoes.md)
 </div>
 
 | ID | Item | Tipo | Depende de |
@@ -94,7 +94,7 @@ A referência é um nicho estreito e vertical, embutido na lateral da torre de m
 
 :material-image-outline: **Imagem de referência**
 
-![Nicho vertical em vidro embutido na lateral da torre de marcenaria, com prateleiras iluminadas por LED e base em mármore](../assets/cristaleira_1.jpeg)
+![Nicho vertical em vidro embutido na lateral da torre de marcenaria, com prateleiras iluminadas por LED e base em mármore](../../assets/cristaleira_1.jpeg)
 
 /// caption
 Nicho estreito embutido na lateral do módulo, fechado em vidro e iluminado, com a face de

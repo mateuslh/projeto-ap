@@ -4,9 +4,20 @@
 :material-home-outline: [Início](index.md) › **Como ler** &nbsp;·&nbsp; convenções aplicáveis a todas as revisões
 </div>
 
-Cada revisão reúne as alterações solicitadas a um conjunto de ambientes. Os ambientes são
-organizados em **módulos**, e cada módulo abre com um quadro de itens antes do detalhamento
-individual.
+O registro se organiza em três níveis: um **bloco de ambientes** reúne suas **revisões**, e
+cada revisão traz uma página por **ambiente**. Cada página de ambiente abre com um quadro de
+itens antes do detalhamento individual.
+
+```text
+bloco de ambientes        privativos · sociais e de serviço
+└── revisão               r1, r2, …  — uma vez publicada, não é reescrita
+    └── ambiente          sala, cozinha, …
+        └── item          SAL-01, COZ-02, …
+```
+
+Novas solicitações para um ambiente abrem a revisão seguinte **dentro do mesmo bloco**. Os IDs
+não são reaproveitados: a numeração de cada ambiente continua de onde parou, esteja o item em
+que revisão estiver.
 
 ## Tipos de item
 
@@ -64,7 +75,7 @@ Descrição da solicitação, com o ponto central ==destacado== quando ajudar a 
 
 ## Dependências
 
-O quadro de cada módulo traz a coluna **Depende de**. Um item que depende de outro só deve ser
+O quadro de cada ambiente traz a coluna **Depende de**. Um item que depende de outro só deve ser
 detalhado depois que o item anterior estiver resolvido, sob pena de retrabalho. As relações
 aparecem em três formas:
 
@@ -76,9 +87,9 @@ aparecem em três formas:
 
 !!! tip "Onde ver o mapa"
 
-    A revisão R2 traz o grafo dessas relações em
-    [Ordem de resolução](r2/index.md#ordem-de-resolução), com os itens de partida no início da
-    cadeia.
+    A revisão 1 dos sociais traz o grafo dessas relações em
+    [Ordem de resolução](sociais/r1/index.md#ordem-de-resolução), com os itens de partida no
+    início da cadeia.
 
 ## Callouts
 
@@ -127,8 +138,8 @@ Quando um item apresenta configurações alternativas, elas vêm em abas, na ord
 
 ## Navegação
 
-- O **menu lateral** lista as revisões e, dentro da R2, um módulo por ambiente.
+- O **menu lateral** lista os blocos, as revisões de cada bloco e uma página por ambiente.
 - O **sumário à direita** lista os itens da página, pelo ID.
 - Cada item tem âncora curta e estável: `SAL-01` responde por `#sal-01`, e o link continua
   válido mesmo que o texto do título seja reescrito.
-- A busca cobre as duas revisões. Pressione ++f++ ou ++s++ para abri-la.
+- A busca cobre todos os blocos e revisões. Pressione ++f++ ou ++s++ para abri-la.
