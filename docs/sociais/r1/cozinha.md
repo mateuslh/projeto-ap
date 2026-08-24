@@ -15,7 +15,16 @@
 
 `spike`{ .t .t-spike title="Exige estudo antes de virar decisão" }
 
-Avaliar a inversão entre a geladeira e a torre quente, nas duas configurações abaixo, ==na ordem de preferência indicada==.
+<div class="lede" markdown>
+Avaliar a inversão entre a geladeira e a torre quente, nas duas configurações abaixo, ==na ordem
+de preferência indicada==.
+</div>
+
+<div class="facts">
+<div><span class="k">Preferência</span><span class="v">A hipótese 1 é a que se desenha primeiro.</span></div>
+<div><span class="k">Se não couber</span><span class="v">A hipótese 2 entra, e o descarte da 1 vem dito.</span></div>
+<div><span class="k">Retorno esperado</span><span class="v">Estudo desenhado e recomendação de qual adotar.</span></div>
+</div>
 
 === ":material-numeric-1-circle: Hipótese principal"
 
@@ -43,7 +52,23 @@ Avaliar a inversão entre a geladeira e a torre quente, nas duas configurações
 
 `change`{ .t .t-change title="Alteração de algo já projetado" }
 
-O passa-pratos deve ser removido do projeto. ==Não há abertura a fechar:== o trecho simplesmente deixa de receber a peça e fica livre.
+<div class="lede" markdown>
+O passa-pratos deve ser removido do projeto. ==Não há abertura a fechar:== o trecho simplesmente
+deixa de receber a peça e fica livre.
+</div>
+
+<div class="shift" markdown>
+<div class="from" markdown>
+<span class="k">Hoje</span>
+O passa-pratos consta do projeto, entre a cozinha e o ambiente vizinho.
+</div>
+<div class="arrow">→</div>
+<div class="to" markdown>
+<span class="k">Proposto</span>
+A peça sai de plantas, elevações e perspectivas. Nada precisa entrar no lugar — a não ser que o
+vazio resultante pese na leitura da parede.
+</div>
+</div>
 
 !!! warning "Ponto de atenção"
 
@@ -59,7 +84,19 @@ O passa-pratos deve ser removido do projeto. ==Não há abertura a fechar:== o t
 
 `feat`{ .t .t-feat title="Item novo, sem correspondente no baseline" }
 
-A bancada de mármore deve receber lixeira embutida de pequeno porte, do tipo balde, apenas para descarte imediato durante o preparo. ==Não substitui a lixeira principal da cozinha:== o recipiente é raso, encaixado no recorte do mármore e removível pelo tampo para esvaziamento.
+<div class="lede" markdown>
+A bancada de mármore deve receber lixeira embutida de pequeno porte, do tipo balde, apenas para
+descarte imediato durante o preparo. ==Não substitui a lixeira principal da cozinha:== o
+recipiente é raso, encaixado no recorte do mármore e removível pelo tampo para esvaziamento.
+</div>
+
+<div class="facts" markdown>
+<div><span class="k">Função</span><span class="v">Descarte imediato durante o preparo.</span></div>
+<div markdown><span class="k">Não é</span><span class="v">A lixeira principal — essa fica na lavanderia, em [`LAV-02`](lavanderia.md#lav-02).</span></div>
+<div><span class="k">Manejo</span><span class="v">Recipiente sai pelo tampo, sem abrir o gabinete.</span></div>
+</div>
+
+
 
 !!! aceite "Critério de aceite"
 
@@ -72,9 +109,23 @@ A bancada de mármore deve receber lixeira embutida de pequeno porte, do tipo ba
 
 `spike`{ .t .t-spike title="Exige estudo antes de virar decisão" } · relacionado a [`SAL-03`](sala.md#sal-03), [`COZ-01`](#coz-01)
 
-Hipótese a avaliar: acomodar a cristaleira na cozinha, com a ==face de exposição voltada para o corredor==, de modo que as peças sejam vistas de fora do ambiente e não a partir da área de preparo.
+<div class="lede" markdown>
+Hipótese a avaliar: acomodar a cristaleira na cozinha, com a ==face de exposição voltada para o
+corredor==, de modo que as peças sejam vistas de fora do ambiente e não a partir da área de
+preparo.
+</div>
 
-A referência é um nicho estreito e vertical, embutido na lateral da torre de marcenaria, fechado em vidro e com iluminação própria. É solução que ocupa pouca área de planta, porque aproveita a espessura de um móvel que já existe.
+A referência é um nicho estreito e vertical, embutido na lateral da torre de marcenaria, fechado
+em vidro e com iluminação própria. É solução que ocupa pouca área de planta, porque aproveita a
+espessura de um móvel que já existe.
+
+<div class="facts" markdown>
+<div><span class="k">Pergunta</span><span class="v">A lateral do módulo comporta o nicho na profundidade necessária?</span></div>
+<div markdown><span class="k">Parte de</span><span class="v">A configuração recomendada em [`COZ-01`](#coz-01).</span></div>
+<div><span class="k">Custo a medir</span><span class="v">Guarda perdida no módulo que recebe o nicho.</span></div>
+</div>
+
+
 
 !!! abstract "Escopo do estudo"
 
@@ -92,7 +143,7 @@ A referência é um nicho estreito e vertical, embutido na lateral da torre de m
     válido== e fecha os dois itens. Não se pede que a peça seja acomodada de todo jeito: o que
     se pede é a verificação das duas posições e uma resposta fundamentada, seja ela qual for.
 
-:material-image-outline: **Imagem de referência**
+<p class="medialbl" markdown>:material-image-outline: Imagem de referência</p>
 
 ![Nicho vertical em vidro embutido na lateral da torre de marcenaria, com prateleiras iluminadas por LED e base em mármore](../../assets/cristaleira_1.jpeg)
 

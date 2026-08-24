@@ -8,6 +8,25 @@ Bloco dos ambientes de convívio e de apoio: sala, cozinha, lavanderia, quarto d
 e os itens transversais a todo o apartamento. As solicitações entram por revisão, e cada
 revisão publicada permanece como está — ==novas solicitações abrem a revisão seguinte==.
 
+<div class="stats">
+<div><span class="n">5</span><span class="k">Ambientes</span></div>
+<div><span class="n">1</span><span class="k">Revisão</span></div>
+<div class="is-change"><span class="n">4</span><span class="k">Change</span></div>
+<div class="is-feat"><span class="n">4</span><span class="k">Feat</span></div>
+<div class="is-spike"><span class="n">4</span><span class="k">Spike</span></div>
+</div>
+
+<div class="mix">
+<span class="m-change" style="width:33.33%"></span>
+<span class="m-feat" style="width:33.33%"></span>
+<span class="m-spike" style="width:33.34%"></span>
+</div>
+<ul class="mix-key">
+<li><i class="m-change"></i> 4 alterações de projeto</li>
+<li><i class="m-feat"></i> 4 peças novas</li>
+<li><i class="m-spike"></i> 4 estudos com parecer</li>
+</ul>
+
 ## Revisões
 
 | Revisão | Escopo | Ambientes | Itens | Baseline |

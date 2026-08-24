@@ -12,12 +12,22 @@
 
 `change`{ .t .t-change title="Alteração de algo já projetado" }
 
+<div class="lede" markdown>
 A escrivaninha e o mobiliário de apoio do quarto de hóspede/filho devem ser reformulados para
 ==uso efetivo de estudo==, e não apenas como composição do ambiente. O posto precisa comportar
 longos períodos sentado, com postura adequada e material de estudo à mão.
+</div>
+
+<div class="facts" markdown>
+<div><span class="k">O que muda</span><span class="v">O posto passa a ser dimensionado para estudar, não para compor.</span></div>
+<div><span class="k">Uso previsto</span><span class="v">Longos períodos sentado, com material à mão.</span></div>
+<div markdown><span class="k">A conferir</span><span class="v">Pontos elétricos, contra o levantamento de [`GER-01`](geral.md#ger-01).</span></div>
+</div>
 
 São cinco requisitos, e eles valem em conjunto: atender a um deles às custas de outro não
 resolve o item.
+
+
 
 | Requisito | O que se pede |
 |---|---|

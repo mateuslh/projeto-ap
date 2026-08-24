@@ -16,6 +16,9 @@ theme:
   language: pt-BR
   icon:
     repo: fontawesome/brands/github
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.instant
     - navigation.tracking

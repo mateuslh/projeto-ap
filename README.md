@@ -86,6 +86,13 @@ pipeline em vez de ir para o ar silenciosamente.
   estilizado no `extra.css`.
 - Termos recorrentes do vocabulário de marcenaria entram em `includes/abreviacoes.md` e viram
   tooltip em todas as páginas, sem precisar de repetição no texto.
+- Os blocos visuais são HTML com o atributo `markdown`, estilizados em `docs/assets/extra.css`:
+  `.stats` e `.mix` (números e composição da revisão), `.itemmap` (mapa de itens por ambiente),
+  `.facts` (ficha do item), `.shift` (o que está projetado hoje × o que se pede) e
+  `figure.dgm` (esquemas de decisão em SVG). Sem o atributo `markdown`, links e ícones dentro
+  desses blocos não são processados — e um link `.md` não resolvido escapa do `strict`.
+- Os esquemas em SVG tratam de **decisão, não de forma**: ordem de resolução, alternativas e
+  critérios. Desenhar a peça é do projetista, e o registro não se antecipa a isso.
 - Todo item declara tipo (`change`, `feat` ou `spike`), dependências e critério de aceite.
 - Alterações no conteúdo entram por revisão: uma revisão publicada não é reescrita, e novas
   solicitações abrem a revisão seguinte **dentro do mesmo bloco**.

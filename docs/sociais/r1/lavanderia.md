@@ -13,13 +13,34 @@
 
 `feat`{ .t .t-feat title="Item novo, sem correspondente no baseline" }
 
-Prever tábua de passar embutida na marcenaria da lavanderia, ==recolhida quando fora de uso== e sem ocupar área de circulação nem exigir guarda avulsa.
+<div class="lede" markdown>
+Prever tábua de passar embutida na marcenaria da lavanderia, ==recolhida quando fora de uso== e
+sem ocupar área de circulação nem exigir guarda avulsa.
+</div>
+
+<div class="facts" markdown>
+<div><span class="k">Requisito firme</span><span class="v">Peça inteiramente contida no móvel quando recolhida.</span></div>
+<div><span class="k">Livre ao projetista</span><span class="v">Escamoteável, rebatível em gaveta ou em porta.</span></div>
+<div markdown><span class="k">A conferir</span><span class="v">Tomada ao alcance da posição de uso, contra [`GER-01`](geral.md#ger-01).</span></div>
+</div>
+
+<div class="shift" markdown>
+<div class="from" markdown>
+<span class="k">Recolhida</span>
+Nada aparente e nenhuma área de circulação ocupada: a peça fica inteiramente contida no móvel.
+</div>
+<div class="arrow">→</div>
+<div class="to" markdown>
+<span class="k">Em uso</span>
+Área livre suficiente para passar roupa, servida por ponto de tomada acessível.
+</div>
+</div>
 
 !!! note "Nota"
 
     O sistema fica a seu critério, seja em módulo com tábua escamoteável, seja em gaveta ou porta com tábua rebatível, desde que a peça permaneça inteiramente contida no móvel quando recolhida.
 
-:material-play-box-outline: **Vídeo de referência**
+<p class="medialbl" markdown>:material-play-box-outline: Vídeo de referência</p>
 
 <div class="video-ref">
 <iframe src="https://www.tiktok.com/embed/v2/7259097737768242437"
@@ -46,9 +67,33 @@ de funcionamento, não de acabamento.
 
 `feat`{ .t .t-feat title="Item novo, sem correspondente no baseline" }
 
-A lavanderia deve abrigar a lixeira principal do apartamento, de grande porte. O que se pede é que ela ==tenha lugar definido em projeto==, e não que fique acomodada onde sobrar espaço.
+<div class="lede" markdown>
+A lavanderia deve abrigar a lixeira principal do apartamento, de grande porte. O que se pede é
+que ela ==tenha lugar definido em projeto==, e não que fique acomodada onde sobrar espaço.
+</div>
 
-==A lixeira apoiada no piso é a solução preferida==, desde que o ambiente comporte a peça sem prejuízo da circulação. Não é exigido compartimento fechado nem embutimento na marcenaria.
+==A lixeira apoiada no piso é a solução preferida==, desde que o ambiente comporte a peça sem
+prejuízo da circulação. Não é exigido compartimento fechado nem embutimento na marcenaria.
+
+<div class="facts" markdown>
+<div><span class="k">Preferido</span><span class="v">Peça apoiada no piso, em posição indicada em planta.</span></div>
+<div><span class="k">Não exigido</span><span class="v">Compartimento fechado ou embutimento.</span></div>
+<div markdown><span class="k">Último recurso</span><span class="v">Elevar as máquinas sobre base, só se o piso não resolver.</span></div>
+</div>
+
+<div class="shift" markdown>
+<div class="from" markdown>
+<span class="k">Preferido</span>
+Lixeira apoiada no piso, em posição indicada em planta, com a circulação preservada mesmo com as
+portas das máquinas abertas.
+</div>
+<div class="arrow">→</div>
+<div class="to" markdown>
+<span class="k">Só se o piso não resolver</span>
+Máquinas elevadas sobre base, com três verificações próprias: altura de uso resultante, acesso ao
+tambor e ao filtro, e dimensionamento sob carga e vibração.
+</div>
+</div>
 
 !!! warning "Elevar as máquinas é último recurso"
 

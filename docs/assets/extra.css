@@ -277,3 +277,453 @@
   border-radius: 0.4rem;
   box-shadow: 0 0 0 1px var(--md-default-fg-color--lightest);
 }
+
+/* --------------------------------------------------------------------------
+   9. Esquemas de decisão
+   Poucos e deliberadamente abstratos: mostram ordem de resolução e critérios,
+   nunca a forma da peça. O traço vem por classe, e não por atributo de cor,
+   para acompanhar a troca de esquema claro/escuro.
+   -------------------------------------------------------------------------- */
+
+:root {
+  --dgm-ink: #1c1c1c;
+  --dgm-line: #6d6d6d;
+  --dgm-thin: #b8b8b8;
+  --dgm-surface: rgba(0, 0, 0, 0.045);
+  --dgm-void: rgba(0, 0, 0, 0.035);
+  --dgm-hl: #3f51b5;
+}
+
+[data-md-color-scheme="slate"] {
+  --dgm-ink: #e6e6e6;
+  --dgm-line: #9a9a9a;
+  --dgm-thin: #5a5a5a;
+  --dgm-surface: rgba(255, 255, 255, 0.06);
+  --dgm-void: rgba(255, 255, 255, 0.04);
+  --dgm-hl: #9db1ff;
+}
+
+.md-typeset figure.dgm {
+  /* O tema aplica width: fit-content nas figuras, o que encolheria os esquemas */
+  width: 100%;
+  box-sizing: border-box;
+  margin: 1.4em 0;
+  padding: 0.9rem 0.9rem 0.2rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.5rem;
+  background-color: var(--md-code-bg-color);
+}
+
+/* O md_in_html embrulha o SVG em um parágrafo; ele não deve espaçar nada */
+.md-typeset figure.dgm p {
+  margin: 0;
+}
+
+.md-typeset figure.dgm svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.md-typeset figure.dgm figcaption {
+  margin: 0.7rem 0 0;
+  padding: 0.6rem 0.2rem 0.7rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+/* Vocabulário gráfico compartilhado pelos esquemas */
+.dgm svg text {
+  fill: var(--dgm-ink);
+  font-family: var(--md-text-font-family, system-ui), sans-serif;
+  font-size: 11px;
+}
+
+.dgm svg .lbl {
+  fill: var(--dgm-line);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.dgm svg .cap {
+  fill: var(--dgm-line);
+  font-size: 10px;
+}
+
+.dgm svg .hl-txt {
+  fill: var(--dgm-hl);
+  font-size: 10.5px;
+  font-weight: 700;
+}
+
+.dgm svg .s-thin {
+  fill: none;
+  stroke: var(--dgm-line);
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+
+.dgm svg .s-ghost {
+  fill: none;
+  stroke: var(--dgm-thin);
+  stroke-width: 1.2;
+  stroke-dasharray: 5 4;
+  stroke-linecap: round;
+}
+
+.dgm svg .s-hl {
+  fill: none;
+  stroke: var(--dgm-hl);
+  stroke-width: 1.8;
+  stroke-linecap: round;
+}
+
+.dgm svg .f-surface {
+  fill: var(--dgm-surface);
+  stroke: var(--dgm-line);
+  stroke-width: 1.2;
+}
+
+.dgm svg .f-void {
+  fill: var(--dgm-void);
+  stroke: var(--dgm-thin);
+  stroke-width: 1.1;
+  stroke-dasharray: 4 4;
+}
+
+.dgm svg .f-hl {
+  fill: color-mix(in srgb, var(--dgm-hl) 16%, transparent);
+  stroke: var(--dgm-hl);
+  stroke-width: 1.6;
+}
+
+.dgm svg .f-spike {
+  fill: var(--t-spike-bg);
+  stroke: var(--t-spike-fg);
+  stroke-width: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   10. Painel de números da revisão
+   -------------------------------------------------------------------------- */
+
+.md-typeset .stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 0.6rem;
+  margin: 1.2em 0;
+}
+
+.md-typeset .stats > div {
+  padding: 0.7rem 0.85rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.45rem;
+  background-color: var(--md-code-bg-color);
+}
+
+.md-typeset .stats .n {
+  display: block;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.md-typeset .stats .k {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.md-typeset .stats .is-change .n { color: var(--t-change-fg); }
+.md-typeset .stats .is-feat .n { color: var(--t-feat-fg); }
+.md-typeset .stats .is-spike .n { color: var(--t-spike-fg); }
+
+/* Barra de composição por tipo */
+.md-typeset .mix {
+  display: flex;
+  height: 0.55rem;
+  margin: 1.1em 0 0.5em;
+  overflow: hidden;
+  border-radius: 1rem;
+  background-color: var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .mix > span {
+  display: block;
+  height: 100%;
+}
+
+.md-typeset .mix .m-change { background-color: var(--t-change-fg); }
+.md-typeset .mix .m-feat { background-color: var(--t-feat-fg); }
+.md-typeset .mix .m-spike { background-color: var(--t-spike-fg); }
+
+.md-typeset .mix-key {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.1rem;
+  margin: 0 0 1.4em;
+  padding: 0;
+  list-style: none;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.68rem;
+}
+
+.md-typeset .mix-key li {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0;
+}
+
+.md-typeset .mix-key i {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  font-style: normal;
+}
+
+.md-typeset .mix-key .m-change { background-color: var(--t-change-fg); }
+.md-typeset .mix-key .m-feat { background-color: var(--t-feat-fg); }
+.md-typeset .mix-key .m-spike { background-color: var(--t-spike-fg); }
+
+/* --------------------------------------------------------------------------
+   11. Mapa de itens — uma coluna por ambiente, uma pílula por item
+   -------------------------------------------------------------------------- */
+
+.md-typeset .itemmap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.6rem;
+  margin: 1.2em 0;
+}
+
+.md-typeset .itemmap section {
+  display: flex;
+  flex-direction: column;
+  padding: 0.7rem 0.75rem 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 0.45rem;
+  background-color: var(--md-code-bg-color);
+}
+
+.md-typeset .itemmap p {
+  margin: 0;
+}
+
+.md-typeset .itemmap .room {
+  display: block;
+  margin: 0 0 0.55rem;
+  color: var(--md-default-fg-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.md-typeset .itemmap .room small {
+  display: block;
+  margin-top: 0.1rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.62rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.md-typeset .itemmap a.pill {
+  display: block;
+  margin-bottom: 0.32rem;
+  padding: 0.3rem 0.5rem 0.32rem;
+  border: 1px solid transparent;
+  border-left-width: 3px;
+  border-radius: 0.25rem;
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color--light);
+  font-size: 0.66rem;
+  line-height: 1.4;
+  transition: border-color 125ms, color 125ms, transform 125ms;
+}
+
+.md-typeset .itemmap a.pill:hover {
+  color: var(--md-default-fg-color);
+  transform: translateX(2px);
+}
+
+.md-typeset .itemmap a.pill strong {
+  display: block;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.md-typeset .itemmap .p-change { border-left-color: var(--t-change-fg); }
+.md-typeset .itemmap .p-change strong { color: var(--t-change-fg); }
+.md-typeset .itemmap .p-feat { border-left-color: var(--t-feat-fg); }
+.md-typeset .itemmap .p-feat strong { color: var(--t-feat-fg); }
+.md-typeset .itemmap .p-spike { border-left-color: var(--t-spike-fg); }
+.md-typeset .itemmap .p-spike strong { color: var(--t-spike-fg); }
+
+/* --------------------------------------------------------------------------
+   12. Ficha do item e bloco “de → para”
+   -------------------------------------------------------------------------- */
+
+.md-typeset .facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.55rem;
+  margin: 1.1em 0 1.3em;
+}
+
+.md-typeset .facts > div {
+  padding: 0.55rem 0.7rem 0.6rem;
+  border-left: 2px solid var(--md-default-fg-color--lightest);
+  border-radius: 0 0.3rem 0.3rem 0;
+  background-color: var(--md-code-bg-color);
+}
+
+.md-typeset .facts .k {
+  display: block;
+  margin: 0 0 0.15rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.md-typeset .facts .v {
+  display: block;
+  font-size: 0.75rem;
+  line-height: 1.45;
+}
+
+/* Frase de abertura do item, um corpo acima do texto corrido */
+.md-typeset .lede {
+  color: var(--md-default-fg-color);
+  font-size: 0.85rem;
+  line-height: 1.65;
+}
+
+/* Contrapõe o que está projetado hoje ao que a solicitação pede, sem
+   pretender desenhar a peça: o desenho é do projetista. */
+.md-typeset .shift {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: stretch;
+  gap: 0.65rem;
+  margin: 1.2em 0;
+}
+
+.md-typeset .shift > div {
+  padding: 0.7rem 0.85rem 0.75rem;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-left-width: 3px;
+  border-radius: 0.3rem;
+  background-color: var(--md-code-bg-color);
+}
+
+.md-typeset .shift .from {
+  border-left-color: var(--md-default-fg-color--lighter);
+}
+
+.md-typeset .shift .to {
+  border-left-color: var(--t-feat-fg);
+}
+
+.md-typeset .shift .k {
+  display: block;
+  margin-bottom: 0.25rem;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.md-typeset .shift .to .k {
+  color: var(--t-feat-fg);
+}
+
+.md-typeset .shift p {
+  margin: 0;
+  font-size: 0.76rem;
+  line-height: 1.55;
+}
+
+.md-typeset .shift .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--md-default-fg-color--lighter);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+@media screen and (max-width: 44.9375em) {
+  .md-typeset .shift {
+    grid-template-columns: 1fr;
+  }
+
+  .md-typeset .shift .arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* Cards do tema usados como lista de opções: um ponto menor, para caberem
+   lado a lado sem esticar a página */
+.md-typeset .grid.cards.tight > ul > li {
+  padding: 0.7rem 0.85rem 0.8rem;
+  font-size: 0.76rem;
+}
+
+.md-typeset .grid.cards.tight > ul > li > p:first-child {
+  margin-top: 0;
+}
+
+/* --------------------------------------------------------------------------
+   13. Rótulo dos blocos de mídia (“Imagem de referência”, “Vídeo de referência”)
+   -------------------------------------------------------------------------- */
+
+.md-typeset .medialbl {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 1.6em 0 -0.4em;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.md-typeset .medialbl .twemoji {
+  height: 0.85rem;
+  width: 0.85rem;
+}
+
+/* --------------------------------------------------------------------------
+   14. Impressão
+   -------------------------------------------------------------------------- */
+
+@media print {
+  .md-typeset figure.dgm,
+  .md-typeset .stats > div,
+  .md-typeset .itemmap section,
+  .md-typeset .shift > div {
+    break-inside: avoid;
+  }
+}
